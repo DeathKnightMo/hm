@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻资讯</title>
+<link href="{&STATIC}/css/juteFace.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+window.onload= function(){
+    var $ = function(id){return document.getElementById(id)};
+    $('menu').onclick = function(){
+        Scroll('test',300,1.2);
+    }
+    $('test').onclick = function(){
+        Scroll('test',300,1.2);
+    }
+}
+function Scroll(obj, h, s){
+    var h = h || 200;
+    var s = s || 1.2;
+    var obj = typeof(obj)=="string"?document.getElementById(obj):obj;
+    if(obj == undefined){return false;}
+    var status = obj.getAttribute("status")==null;
+    var oh = parseInt(obj.offsetHeight);
+    obj.style.height = oh;
+    obj.style.display = "block";
+	obj.style.overflow = "hidden";
+    if(obj.getAttribute("oldHeight") == null){
+        obj.setAttribute("oldHeight", oh);
+    }else{
+        var oldH = Math.ceil(obj.getAttribute("oldHeight"));
+    }
+    var reSet = function(){
+        if(status){
+            if(oh < h){
+                oh = Math.ceil(h-(h-oh)/s);
+                obj.style.height = oh+"px";
+            }else{
+                obj.setAttribute("status",false);
+                window.clearInterval(IntervalId);
+	            document.getElementById("wbScId").className = "wbScY";
+				document.getElementById("showBtn").className = "wbList_max";
+            }
+        }else{
+            obj.style.height = oldH+"px";
+            obj.removeAttribute("status");
+            window.clearInterval(IntervalId);
+			document.getElementById("wbScId").className = "wbSc";
+			document.getElementById("showBtn").className = "wbList_min";
+        }
+    }
+    var IntervalId = window.setInterval(reSet,10);
+	return status;
+}
+</script>
+</head>
+
+<body>
+<div class="global_header" style="z-index: 1023; position: fixed;-position: absolute;">
+    <div id="nav_holder_top" class="topNav">
+        <h2><a href="index.html"><img alt="Jutech" src="{&STATIC}/images/logo.png"></a></h2>
+	    <div class="JuteNav">
+	        <ul>
+	        	<li><a href="index.html">摩&nbsp;维</a></li>
+	        	<li><a href="">自&nbsp;然</a></li>
+	        	<li><a href="">科&nbsp;技</a></li>
+	        	<li><a href="">成&nbsp;果</a></li>
+	        	<li><a href="">未&nbsp;来</a></li>
+	        	<li><a href="">关&nbsp;爱</a></li>
+	        	<li><a href="">伙&nbsp;伴</a></li>
+	        	<li><a href="">机&nbsp;遇</a></li>
+	        </ul>
+	    </div>
+    </div>
+    <div id="nav_holder_btm"></div>
+</div><!--  end top  -->
+<div class="bigShow">
+    <div class="detailsTit">
+        <h2><a href="about_news.html"><img alt="新闻资讯" src="{&STATIC}/images/about_zx.gif" /></a></h2>
+    </div>
+    <div class="CLR"></div>
+    <div class="newsList">
+    	
+        <ul style="width:230px; margin-top:20px; margin-left:10px; margin-right:20px; float:left; padding-bottom:60px;">
+            <volist name="art0List" id="art">
+            <li>
+                <div class="ListTop"></div>
+                <div class="ListImg">
+                    <div class="ListImgBox"><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}"><present name="art.default_pic"><img src="{$art.default_pic}" /></present></a></div>
+                    <div class="ListTit"><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}">{$art.title}</a></div>
+                    <div class="ListTag"><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}">#标签1</a><a href="n1.html">#标签2</a></div>
+                    <p><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}">{$art.summary}</a></p>
+                </div>
+                <div class="ListBtm"><a href="">转发(2)</a><a href="">评论(1)</a></div>
+            </li>
+            </volist>
+            <!--  
+            <li>
+                <div class="ListTop"></div>
+                <div class="ListImg">
+                    <div class="ListTit2"><a href="a4.html">紫荆花绿色黄麻产业蜚声联合国——刘国忠董事长受邀出席第四次联合国最不发达国家问题会议</a></div>
+                    <div class="ListTag"><a href="a4.html">#标签1</a><a href="a4.html">#标签2</a></div>
+                    <p class="ListTxt2"><a href="a4.html">2011年5月9日-5月11日，江苏紫荆花纺织科技股份有限公司刘国忠董事长和张光齐董事受联合国邀请，参加了于土耳其伊斯坦布尔举行的"第四次联合国最不发达国家问题会议"，刘国忠董事长在会议上发表重要演讲。联合国最不发达国家问题会议每十年召开一次。此次会议的主要目的是探索通过企业投资带动...</a></p>
+                </div>
+                <div class="ListBtm"><a href="">转发(2)</a><a href="">评论(1)</a></div>
+            </li>
+     		-->
+        </ul>
+        <ul style="width:230px; margin-top:20px; margin-right:20px; float:left; padding-bottom:60px;">
+           <volist name="art1List" id="art">
+  			<li>
+                <div class="ListTop"></div>
+                <div class="ListImg">
+                    <div class="ListImgBox"><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}"><present name="art.default_pic"><img src="{$art.default_pic}" /></present></a></div>
+                    <div class="ListTit"><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}">{$art.title}</a></div>
+                    <div class="ListTag"><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}">#标签1</a><a href="n1.html">#标签2</a></div>
+                    <p><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}">{$art.summary}</a></p>
+                </div>
+                <div class="ListBtm"><a href="">转发(2)</a><a href="">评论(1)</a></div>
+            </li>
+            </volist>
+            <!--  
+            <li>
+                <div class="ListTop"></div>
+                <div class="ListImg">
+                    <div class="ListImgBox"><a href="a9.html"><img src="http://www.redbud.com.cn/UploadFile/2011391097851.jpg" /></a></div>
+                    <div class="ListTit"><a href="a9.html">紫荆花集团与苏州大学药学院项目签约仪式</a></div>
+                    <div class="ListTag"><a href="a9.html">#标签1</a><a href="a9.html">#标签2</a></div>
+                    <p><a href="a9.html">2011年2月25日紫荆花集团与苏州大学药学院"植物纤维天然功能在纺织制品上的应用"项目签约仪式在紫荆花三楼会议室举行。常熟市市政府李志宇副市长、市科技局陈岚副局长、尚湖镇沈新平副书记，苏州大学药学院党委书记龚镇、药学院院长镇学初、药学院办公室主任黄小波、药学院教授谢洪平等人出席此次仪...</a></p>
+                </div>
+                <div class="ListBtm"><a href="">转发(2)</a><a href="">评论(1)</a></div>
+            </li>
+            -->
+        </ul>
+        <ul style="width:230px; margin-top:20px; margin-right:20px; float:left; padding-bottom:60px;">
+            <volist name="art2List" id="art">
+            <li>
+                <div class="ListTop"></div>
+                <div class="ListImg">
+                    <div class="ListImgBox"><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}"><present name="art.default_pic"><img src="{$art.default_pic}" /></present></a></div>
+                    <div class="ListTit"><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}">{$art.title}</a></div>
+                    <div class="ListTag"><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}">#标签1</a><a href="n1.html">#标签2</a></div>
+                    <p><a href="{&WWW}/index.php?m=Article&a=art_view&id={$art.id}">{$art.summary}</a></p>
+                </div>
+                <div class="ListBtm"><a href="">转发(2)</a><a href="">评论(1)</a></div>
+            </li>
+            </volist>
+            <!--  
+            <li>
+                <div class="ListTop"></div>
+                <div class="ListImg">
+                    <div class="ListImgBox"><a href="a14.html"><img src="http://www.redbud.com.cn/UploadFile/201012392851518.jpg" /></a></div>
+                    <div class="ListTit"><a href="a14.html">绿色黄麻绽放非洲</a></div>
+                    <div class="ListTag"><a href="a14.html">#标签1</a><a href="">#标签2</a></div>
+                    <p><a href="a14.html">11月27日，2010《苏商》非洲投资高峰论坛在宁隆重举行。江苏紫荆花纺织科技股份有限公司受邀参加，并向来自各界嘉宾介绍了紫荆花黄麻绿色产业在非洲的发展经验和成就。本次高峰论坛由江苏省工商业联合会、对外贸易大学全球企业可持续创新研究中心、江苏省商务厅江苏省国际投资贸易促进中心、联合国开发...</a></p>
+                </div>
+                <div class="ListBtm"><a href="">转发(2)</a><a href="">评论(1)</a></div>
+            </li>
+            -->
+        </ul>
+        <ul style="width:230px; margin-top:20px; float:left; padding-bottom:60px;">
+           <volist name="art3List" id="art">
+            <li>
+                <div class="ListTop"></div>
+                <div class="ListImg">
+                    <div class="ListImgBox"><a href="{&WWW}/Article/art_view?id={$art.id}"><present name="art.default_pic"><img src="{$art.default_pic}" /></present></a></div>
+                    <div class="ListTit"><a href="{&WWW}/Article/art_view?id={$art.id}">{$art.title}</a></div>
+                    <div class="ListTag"><a href="{&WWW}/Article/art_view?id={$art.id}">#标签1</a><a href="n1.html">#标签2</a></div>
+                    <p><a href="{&WWW}/Article/art_view?id={$art.id}">{$art.summary}</a></p>
+                </div>
+                <div class="ListBtm"><a href="">转发(2)</a><a href="">评论(1)</a></div>
+            </li>
+            </volist>
+            <!--  
+            <li>
+                <div class="ListTop"></div>
+                <div class="ListImg">
+                    <div class="ListImgBox"><a href="a8.html"><img src="http://www.redbud.com.cn/UploadFile/201141810485298.jpg" /></a></div>
+                    <div class="ListTit"><a href="a8.html">紫荆花纺纱车间岗位技能竞赛</a></div>
+                    <div class="ListTag"><a href="a8.html">#标签1</a><a href="a8.html">#标签2</a></div>
+                    <p><a href="a8.html">2011年3月8日，江苏紫荆花纺织科技股份有限公司行了一场激烈的"纺纱车间岗位技能竞赛"。 人力资源部负责人高主任与纺纱车间师主任共同监督竞赛流程，评审竞赛结果。竞赛结束，高主任与师主任共同为获奖选手颁发奖状、奖金。通过这次竞赛职工们赛出友谊，赛出风格，此次竞赛不仅是对职工们技能水平的...</a></p>
+                </div>
+                <div class="ListBtm"><a href="">转发(2)</a><a href="">评论(1)</a></div>
+            </li>
+            -->
+        </ul>
+    </div>
+    </div>
+</div><!--  end con  -->
+<div class="CLR"></div>
+
+<div class="juteFooter">
+    <div class="" style="line-height:28px;">&copy; 2007-2012 Jutech-All right reserved.
+	    <span style="float:right; margin-right:20px;">
+
+		    <div id="ckepop">
+		        <span class="jiathis_txt">分享到：</span>
+		        <a class="jiathis_button_qzone"></a>
+		        <a class="jiathis_button_tsina"></a>
+		        <a class="jiathis_button_tqq"></a>
+		        <a class="jiathis_button_renren"></a>
+		        <a class="jiathis_counter_style"></a>
+		    </div>
+		</span>
+    </div>
+</div>
+
+
+</body>
+
+
+</html>

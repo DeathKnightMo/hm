@@ -1,0 +1,620 @@
+[ 2012-04-11T02:49:45+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:50:00+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:50:00+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:50:00+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001933s ]
+[ 2012-04-11T02:50:00+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('111111','222222222','33333333333333<br />\r\n4444446666666666<br />\r\n5555555555555','2012-04-11 02:50:00') [ RunTime:0.018621s ]
+[ 2012-04-11T02:50:00+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T02:50:24+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:50:24+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:50:24+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001680s ]
+[ 2012-04-11T02:50:24+08:00 ] SQL: INSERT INTO `articlepic` (`articleid`,`pictitle`,`picurl`) VALUES (12,'1111111','http://img.local-dev.cn/2012/04/11/51gamezp.jpg') [ RunTime:0.017900s ]
+[ 2012-04-11T02:50:24+08:00 ] SQL: INSERT INTO `articlepic` (`articleid`,`pictitle`,`picurl`) VALUES (12,'22222222','http://img.local-dev.cn/2012/04/11/13340322898487712.jpg') [ RunTime:0.016468s ]
+[ 2012-04-11T02:50:24+08:00 ] NOTIC: [8] Undefined variable: count e3b9c41e8ad440e32283017304ebdb7b.php 第 16 行.
+[ 2012-04-11T02:50:26+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:50:26+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:50:26+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001699s ]
+[ 2012-04-11T02:50:26+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001324s ]
+[ 2012-04-11T02:50:26+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 12 ) LIMIT 1  [ RunTime:0.000816s ]
+[ 2012-04-11T02:50:26+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=12 [ RunTime:0.000333s ]
+[ 2012-04-11T02:50:55+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:50:55+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:50:55+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001692s ]
+[ 2012-04-11T02:50:55+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.002294s ]
+[ 2012-04-11T02:50:55+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 12 ) LIMIT 1  [ RunTime:0.000842s ]
+[ 2012-04-11T02:50:55+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=12 [ RunTime:0.000326s ]
+[ 2012-04-11T02:57:20+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:57:30+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:57:30+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:57:30+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001607s ]
+[ 2012-04-11T02:57:30+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('444','4445','2222222222<br />\r\n4图他v','2012-04-11 02:57:30') [ RunTime:0.019731s ]
+[ 2012-04-11T02:57:30+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T02:57:38+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:57:39+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:57:39+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001921s ]
+[ 2012-04-11T02:57:39+08:00 ] SQL: INSERT INTO `articlepic` (`articleid`,`pictitle`,`picurl`) VALUES (13,'','http://img.local-dev.cn/2012/04/11/51gamezp.jpg') [ RunTime:0.053283s ]
+[ 2012-04-11T02:57:39+08:00 ] NOTIC: [8] Undefined variable: count e3b9c41e8ad440e32283017304ebdb7b.php 第 16 行.
+[ 2012-04-11T02:57:41+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:57:41+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:57:41+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001628s ]
+[ 2012-04-11T02:57:41+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001669s ]
+[ 2012-04-11T02:57:41+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 13 ) LIMIT 1  [ RunTime:0.002521s ]
+[ 2012-04-11T02:57:41+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=13 [ RunTime:0.000336s ]
+[ 2012-04-11T02:58:19+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:58:19+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:58:19+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.002135s ]
+[ 2012-04-11T02:58:19+08:00 ] SQL: INSERT INTO `articlepic` (`articleid`,`pictitle`,`picurl`) VALUES (13,'','http://img.local-dev.cn/2012/04/11/51gamezp.jpg') [ RunTime:0.044474s ]
+[ 2012-04-11T02:58:19+08:00 ] NOTIC: [8] Undefined variable: count e3b9c41e8ad440e32283017304ebdb7b.php 第 16 行.
+[ 2012-04-11T02:59:09+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:59:09+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:59:09+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001387s ]
+[ 2012-04-11T02:59:09+08:00 ] SQL: INSERT INTO `articlepic` (`articleid`,`pictitle`,`picurl`) VALUES (13,'','http://img.local-dev.cn/2012/04/11/51gamezp.jpg') [ RunTime:0.022432s ]
+[ 2012-04-11T02:59:09+08:00 ] NOTIC: [8] Undefined variable: count e3b9c41e8ad440e32283017304ebdb7b.php 第 16 行.
+[ 2012-04-11T02:59:11+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T02:59:11+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T02:59:11+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001693s ]
+[ 2012-04-11T02:59:11+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.002010s ]
+[ 2012-04-11T02:59:11+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 13 ) LIMIT 1  [ RunTime:0.000865s ]
+[ 2012-04-11T02:59:11+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=13 [ RunTime:0.000369s ]
+[ 2012-04-11T02:59:11+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/13.shtml' WHERE id=13 [ RunTime:0.025855s ]
+[ 2012-04-11T03:01:26+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:01:36+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:01:36+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:01:36+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001609s ]
+[ 2012-04-11T03:01:36+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('顶顶顶顶顶顶顶顶顶','水水水水水水水水水水水水水','水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水','2012-04-11 03:01:36') [ RunTime:0.045925s ]
+[ 2012-04-11T03:01:36+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:01:40+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:01:40+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:01:40+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001521s ]
+[ 2012-04-11T03:01:40+08:00 ] SQL: INSERT INTO `articlepic` (`articleid`,`pictitle`,`picurl`) VALUES (14,'','http://img.local-dev.cn/2012/04/11/51gamezp.jpg') [ RunTime:0.045268s ]
+[ 2012-04-11T03:01:40+08:00 ] NOTIC: [8] Undefined variable: count e3b9c41e8ad440e32283017304ebdb7b.php 第 16 行.
+[ 2012-04-11T03:01:41+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:01:41+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:01:41+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001670s ]
+[ 2012-04-11T03:01:41+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001735s ]
+[ 2012-04-11T03:01:41+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 14 ) LIMIT 1  [ RunTime:0.001207s ]
+[ 2012-04-11T03:01:41+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=14 [ RunTime:0.000328s ]
+[ 2012-04-11T03:01:41+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/14.shtml' WHERE id=14 [ RunTime:0.042284s ]
+[ 2012-04-11T03:01:44+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:01:44+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:01:44+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.002566s ]
+[ 2012-04-11T03:01:44+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001645s ]
+[ 2012-04-11T03:01:44+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 14 ) LIMIT 1  [ RunTime:0.000850s ]
+[ 2012-04-11T03:01:44+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=14 [ RunTime:0.000338s ]
+[ 2012-04-11T03:01:44+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/14.shtml' WHERE id=14 [ RunTime:0.027686s ]
+[ 2012-04-11T03:05:22+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:05:30+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:05:30+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:05:30+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001718s ]
+[ 2012-04-11T03:05:30+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('我我我我我我我我我','噩噩噩噩噩噩噩噩噩噩噩噩噩噩噩噩噩','呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜','2012-04-11 03:05:30') [ RunTime:0.048165s ]
+[ 2012-04-11T03:05:30+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:05:33+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:05:33+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:05:33+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001568s ]
+[ 2012-04-11T03:05:33+08:00 ] SQL: INSERT INTO `articlepic` (`articleid`,`pictitle`,`picurl`) VALUES (15,'','http://img.local-dev.cn/2012/04/11/13340322898487712.jpg') [ RunTime:0.017262s ]
+[ 2012-04-11T03:05:33+08:00 ] NOTIC: [8] Undefined variable: count e3b9c41e8ad440e32283017304ebdb7b.php 第 16 行.
+[ 2012-04-11T03:05:35+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:05:35+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:05:35+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001703s ]
+[ 2012-04-11T03:05:35+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001378s ]
+[ 2012-04-11T03:05:35+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 15 ) LIMIT 1  [ RunTime:0.000882s ]
+[ 2012-04-11T03:05:35+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=15 [ RunTime:0.000341s ]
+[ 2012-04-11T03:05:35+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/15.shtml' WHERE id=15 [ RunTime:0.054211s ]
+[ 2012-04-11T03:17:15+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:17:19+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:17:19+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:17:19+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001740s ]
+[ 2012-04-11T03:17:19+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('1111111','222222222','333333333333','2012-04-11 03:17:19') [ RunTime:0.050212s ]
+[ 2012-04-11T03:17:19+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:17:49+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:17:49+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:17:49+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001807s ]
+[ 2012-04-11T03:17:49+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('1111111','222222222','333333333333','2012-04-11 03:17:49') [ RunTime:0.017640s ]
+[ 2012-04-11T03:17:49+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:18:32+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:18:32+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:18:32+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001799s ]
+[ 2012-04-11T03:18:32+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('1111111','222222222','333333333333','2012-04-11 03:18:32') [ RunTime:0.042820s ]
+[ 2012-04-11T03:18:32+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:19:03+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:19:03+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:19:03+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001674s ]
+[ 2012-04-11T03:19:03+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('1111111','222222222','333333333333','2012-04-11 03:19:03') [ RunTime:0.049290s ]
+[ 2012-04-11T03:19:03+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:19:14+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:19:14+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:19:14+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001699s ]
+[ 2012-04-11T03:19:14+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('1111111','222222222','333333333333','2012-04-11 03:19:14') [ RunTime:0.042292s ]
+[ 2012-04-11T03:19:14+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:19:22+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:19:22+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:19:22+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001641s ]
+[ 2012-04-11T03:19:22+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001828s ]
+[ 2012-04-11T03:19:22+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 20 ) LIMIT 1  [ RunTime:0.000874s ]
+[ 2012-04-11T03:19:22+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=20 [ RunTime:0.000332s ]
+[ 2012-04-11T03:19:29+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:19:29+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:19:29+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001716s ]
+[ 2012-04-11T03:19:29+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001716s ]
+[ 2012-04-11T03:19:29+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 20 ) LIMIT 1  [ RunTime:0.000912s ]
+[ 2012-04-11T03:19:29+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=20 [ RunTime:0.000396s ]
+[ 2012-04-11T03:19:29+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/20.shtml' WHERE id=20 [ RunTime:0.020699s ]
+[ 2012-04-11T03:20:18+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:20:18+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:20:18+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001682s ]
+[ 2012-04-11T03:20:18+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001381s ]
+[ 2012-04-11T03:20:18+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 1 ) LIMIT 1  [ RunTime:0.001621s ]
+[ 2012-04-11T03:20:18+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=1 [ RunTime:0.000414s ]
+[ 2012-04-11T03:20:18+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/1.shtml' WHERE id=1 [ RunTime:0.050915s ]
+[ 2012-04-11T03:20:59+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:20:59+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:20:59+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001786s ]
+[ 2012-04-11T03:20:59+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001353s ]
+[ 2012-04-11T03:20:59+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 1 ) LIMIT 1  [ RunTime:0.000848s ]
+[ 2012-04-11T03:20:59+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=1 [ RunTime:0.000343s ]
+[ 2012-04-11T03:20:59+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/1.shtml' WHERE id=1 [ RunTime:0.044998s ]
+[ 2012-04-11T03:20:59+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:20:59+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:20:59+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001529s ]
+[ 2012-04-11T03:20:59+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.002003s ]
+[ 2012-04-11T03:20:59+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 1 ) LIMIT 1  [ RunTime:0.000881s ]
+[ 2012-04-11T03:20:59+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=1 [ RunTime:0.000335s ]
+[ 2012-04-11T03:20:59+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/1.shtml' WHERE id=1 [ RunTime:0.039651s ]
+[ 2012-04-11T03:21:45+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:21:45+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:21:45+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001651s ]
+[ 2012-04-11T03:21:45+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.002155s ]
+[ 2012-04-11T03:21:45+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 1 ) LIMIT 1  [ RunTime:0.001351s ]
+[ 2012-04-11T03:21:45+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=1 [ RunTime:0.000348s ]
+[ 2012-04-11T03:21:45+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/1.shtml' WHERE id=1 [ RunTime:0.043084s ]
+[ 2012-04-11T03:21:46+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:21:46+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:21:46+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001615s ]
+[ 2012-04-11T03:21:46+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001349s ]
+[ 2012-04-11T03:21:46+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 1 ) LIMIT 1  [ RunTime:0.000835s ]
+[ 2012-04-11T03:21:46+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=1 [ RunTime:0.000330s ]
+[ 2012-04-11T03:21:46+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/1.shtml' WHERE id=1 [ RunTime:0.041307s ]
+[ 2012-04-11T03:21:47+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:21:47+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:21:47+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001736s ]
+[ 2012-04-11T03:21:47+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.002047s ]
+[ 2012-04-11T03:21:47+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 1 ) LIMIT 1  [ RunTime:0.001339s ]
+[ 2012-04-11T03:21:47+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=1 [ RunTime:0.000339s ]
+[ 2012-04-11T03:21:47+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/1.shtml' WHERE id=1 [ RunTime:0.016767s ]
+[ 2012-04-11T03:22:38+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:22:38+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:22:38+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001722s ]
+[ 2012-04-11T03:22:38+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001600s ]
+[ 2012-04-11T03:22:38+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 20 ) LIMIT 1  [ RunTime:0.001690s ]
+[ 2012-04-11T03:22:38+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=20 [ RunTime:0.000327s ]
+[ 2012-04-11T03:22:38+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/20.shtml' WHERE id=20 [ RunTime:0.081971s ]
+[ 2012-04-11T03:23:12+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:23:12+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:23:12+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001687s ]
+[ 2012-04-11T03:23:12+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('1111111','222222222','333333333333','2012-04-11 03:23:12') [ RunTime:0.047132s ]
+[ 2012-04-11T03:23:12+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:23:14+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:23:14+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:23:14+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001741s ]
+[ 2012-04-11T03:23:14+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001417s ]
+[ 2012-04-11T03:23:14+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 21 ) LIMIT 1  [ RunTime:0.000854s ]
+[ 2012-04-11T03:23:14+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=21 [ RunTime:0.000348s ]
+[ 2012-04-11T03:23:14+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/21.shtml' WHERE id=21 [ RunTime:0.044993s ]
+[ 2012-04-11T03:23:35+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:23:35+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:23:35+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001756s ]
+[ 2012-04-11T03:23:36+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('1111111','222222222','333333333333','2012-04-11 03:23:35') [ RunTime:0.052277s ]
+[ 2012-04-11T03:23:36+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:23:37+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:23:37+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:23:37+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001708s ]
+[ 2012-04-11T03:23:37+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.002902s ]
+[ 2012-04-11T03:23:37+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 22 ) LIMIT 1  [ RunTime:0.000888s ]
+[ 2012-04-11T03:23:37+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=22 [ RunTime:0.000341s ]
+[ 2012-04-11T03:23:37+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/22.shtml' WHERE id=22 [ RunTime:0.086001s ]
+[ 2012-04-11T03:25:05+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:25:05+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:25:05+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001977s ]
+[ 2012-04-11T03:25:05+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('1111111','222222222','333333333333','2012-04-11 03:25:05') [ RunTime:0.053365s ]
+[ 2012-04-11T03:25:05+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T03:25:06+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:25:06+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:25:06+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001652s ]
+[ 2012-04-11T03:25:06+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001401s ]
+[ 2012-04-11T03:25:06+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 23 ) LIMIT 1  [ RunTime:0.000858s ]
+[ 2012-04-11T03:25:06+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=23 [ RunTime:0.000338s ]
+[ 2012-04-11T03:25:06+08:00 ] SQL: UPDATE `article` SET `pageurl`='http://www.local-dev.cn/HTML/23.shtml' WHERE id=23 [ RunTime:0.039936s ]
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:25:08+08:00 ] ERR: (ThinkException) 无法加载模块HTML
+[ 2012-04-11T03:47:52+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:47:52+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:47:52+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001620s ]
+[ 2012-04-11T03:47:52+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000881s ]
+[ 2012-04-11T03:48:15+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:48:15+08:00 ] NOTIC: [8] Undefined variable: error 87b06d115fd8e286a6c2ab06954c1699.php 第 6 行.
+[ 2012-04-11T03:48:41+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:48:41+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:48:41+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001456s ]
+[ 2012-04-11T03:48:41+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000456s ]
+[ 2012-04-11T03:51:13+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:51:13+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:51:13+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001482s ]
+[ 2012-04-11T03:51:13+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000538s ]
+[ 2012-04-11T03:51:18+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T03:51:18+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001501s ]
+[ 2012-04-11T03:51:18+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `category` WHERE name='aa' and fatherid=0 LIMIT 1  [ RunTime:0.008349s ]
+[ 2012-04-11T03:51:18+08:00 ] SQL: INSERT INTO `category` (`fatherid`,`name`) VALUES (0,'aa') [ RunTime:0.013940s ]
+[ 2012-04-11T03:54:21+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T03:54:21+08:00 ] NOTIC: [8] Undefined variable: art0List e284a4722b9d84ca82cc0cb675f4f84e.php 第 84 行.
+[ 2012-04-11T03:54:21+08:00 ] NOTIC: [8] Undefined variable: art1List e284a4722b9d84ca82cc0cb675f4f84e.php 第 107 行.
+[ 2012-04-11T03:54:21+08:00 ] NOTIC: [8] Undefined variable: art2List e284a4722b9d84ca82cc0cb675f4f84e.php 第 131 行.
+[ 2012-04-11T03:54:21+08:00 ] NOTIC: [8] Undefined variable: art3List e284a4722b9d84ca82cc0cb675f4f84e.php 第 155 行.
+[ 2012-04-11T04:01:15+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:01:15+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001556s ]
+[ 2012-04-11T04:01:15+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `category` WHERE id=1 LIMIT 1  [ RunTime:0.001153s ]
+[ 2012-04-11T04:01:15+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `category` WHERE name='bb' and fatherid=1 LIMIT 1  [ RunTime:0.000343s ]
+[ 2012-04-11T04:01:15+08:00 ] SQL: INSERT INTO `category` (`fatherid`,`name`) VALUES (1,'bb') [ RunTime:0.046750s ]
+[ 2012-04-11T04:25:49+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:25:49+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:25:49+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001632s ]
+[ 2012-04-11T04:25:49+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000706s ]
+[ 2012-04-11T04:25:54+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T04:30:16+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:30:16+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:30:16+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001551s ]
+[ 2012-04-11T04:30:16+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.004440s ]
+[ 2012-04-11T04:30:21+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 10 行.
+[ 2012-04-11T04:30:53+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:30:53+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:30:53+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001587s ]
+[ 2012-04-11T04:30:53+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000517s ]
+[ 2012-04-11T04:30:56+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T04:31:06+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:31:06+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:31:06+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001485s ]
+[ 2012-04-11T04:31:06+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000732s ]
+[ 2012-04-11T04:31:10+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T04:31:41+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:31:41+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:31:41+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001508s ]
+[ 2012-04-11T04:31:41+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000483s ]
+[ 2012-04-11T04:31:45+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T04:32:26+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:32:26+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:32:26+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001596s ]
+[ 2012-04-11T04:32:26+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000802s ]
+[ 2012-04-11T04:32:29+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T04:38:40+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:38:40+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:38:40+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001456s ]
+[ 2012-04-11T04:38:40+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000620s ]
+[ 2012-04-11T04:38:45+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 10 行.
+[ 2012-04-11T04:42:29+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:42:29+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:42:29+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.002275s ]
+[ 2012-04-11T04:42:29+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000816s ]
+[ 2012-04-11T04:42:32+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T04:42:57+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:42:57+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:42:57+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001492s ]
+[ 2012-04-11T04:42:57+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.003466s ]
+[ 2012-04-11T04:43:00+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T04:43:35+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:43:35+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:43:35+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001876s ]
+[ 2012-04-11T04:43:35+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000567s ]
+[ 2012-04-11T04:43:39+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T04:54:57+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T04:54:57+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T04:54:57+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001734s ]
+[ 2012-04-11T04:54:57+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001122s ]
+[ 2012-04-11T04:55:01+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:00:11+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:00:11+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:00:11+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001596s ]
+[ 2012-04-11T05:00:11+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.002407s ]
+[ 2012-04-11T05:00:15+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:00:50+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:00:50+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:00:50+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001497s ]
+[ 2012-04-11T05:00:50+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001837s ]
+[ 2012-04-11T05:00:53+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:01:17+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:01:17+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:01:17+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001520s ]
+[ 2012-04-11T05:01:17+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000503s ]
+[ 2012-04-11T05:02:21+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:02:21+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:02:21+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001572s ]
+[ 2012-04-11T05:02:21+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001640s ]
+[ 2012-04-11T05:02:23+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:03:29+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:03:29+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:03:29+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001536s ]
+[ 2012-04-11T05:03:29+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000501s ]
+[ 2012-04-11T05:03:32+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:04:00+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:04:00+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:04:00+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001480s ]
+[ 2012-04-11T05:04:00+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000525s ]
+[ 2012-04-11T05:04:01+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:04:01+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:04:01+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001477s ]
+[ 2012-04-11T05:04:01+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001503s ]
+[ 2012-04-11T05:04:03+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:04:05+08:00 ] NOTIC: [8] Undefined variable: category f8b71c92af805d0c9638cb4f59f748ed.php 第 27 行.
+[ 2012-04-11T05:04:33+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:04:34+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001857s ]
+[ 2012-04-11T05:04:34+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('111111','222222222','33333333','2012-04-11 05:04:33') [ RunTime:0.048686s ]
+[ 2012-04-11T05:04:34+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T05:04:39+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:04:39+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:04:39+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001693s ]
+[ 2012-04-11T05:04:39+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001794s ]
+[ 2012-04-11T05:04:39+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 1 ) LIMIT 1  [ RunTime:0.001123s ]
+[ 2012-04-11T05:04:39+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=1 [ RunTime:0.000310s ]
+[ 2012-04-11T05:04:59+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:04:59+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:04:59+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001530s ]
+[ 2012-04-11T05:04:59+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000843s ]
+[ 2012-04-11T05:05:03+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:06:23+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:06:23+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:06:23+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001461s ]
+[ 2012-04-11T05:06:23+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000781s ]
+[ 2012-04-11T05:06:26+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:06:27+08:00 ] NOTIC: [8] Undefined variable: category f8b71c92af805d0c9638cb4f59f748ed.php 第 27 行.
+[ 2012-04-11T05:07:02+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:07:02+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001753s ]
+[ 2012-04-11T05:07:02+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('33','223','123124123','2012-04-11 05:07:02') [ RunTime:0.053073s ]
+[ 2012-04-11T05:07:02+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T05:07:45+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:07:46+08:00 ] NOTIC: [8] Undefined variable: category f8b71c92af805d0c9638cb4f59f748ed.php 第 27 行.
+[ 2012-04-11T05:07:51+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:07:51+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001713s ]
+[ 2012-04-11T05:07:51+08:00 ] SQL: INSERT INTO `article` (`title`,`summary`,`content`,`createdate`) VALUES ('1123123','124123','1241231','2012-04-11 05:07:51') [ RunTime:0.043977s ]
+[ 2012-04-11T05:07:51+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T05:08:01+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:08:01+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:08:01+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001566s ]
+[ 2012-04-11T05:08:01+08:00 ] SQL: INSERT INTO `articlepic` (`articleid`,`pictitle`,`picurl`) VALUES (3,'','http://img.local-dev.cn/2012/04/11/4f84a13185dc0.jpg') [ RunTime:0.046854s ]
+[ 2012-04-11T05:08:01+08:00 ] NOTIC: [8] Undefined variable: count e3b9c41e8ad440e32283017304ebdb7b.php 第 22 行.
+[ 2012-04-11T05:08:04+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:08:04+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:08:04+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001901s ]
+[ 2012-04-11T05:08:04+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.002079s ]
+[ 2012-04-11T05:08:04+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 3 ) LIMIT 1  [ RunTime:0.001667s ]
+[ 2012-04-11T05:08:04+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=3 [ RunTime:0.000461s ]
+[ 2012-04-11T05:10:07+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:10:07+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:10:07+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001509s ]
+[ 2012-04-11T05:10:07+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000859s ]
+[ 2012-04-11T05:10:10+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:10:11+08:00 ] NOTIC: [8] Undefined variable: category f8b71c92af805d0c9638cb4f59f748ed.php 第 27 行.
+[ 2012-04-11T05:11:54+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:11:54+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:11:54+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001502s ]
+[ 2012-04-11T05:11:55+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001634s ]
+[ 2012-04-11T05:11:58+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:12:19+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:12:19+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001785s ]
+[ 2012-04-11T05:12:19+08:00 ] SQL: INSERT INTO `article` (`categoryid`,`title`,`summary`,`content`,`createdate`) VALUES (2,'12312','123123','214saffad','2012-04-11 05:12:19') [ RunTime:0.041786s ]
+[ 2012-04-11T05:12:19+08:00 ] NOTIC: [8] Undefined variable: successpic e3b9c41e8ad440e32283017304ebdb7b.php 第 4 行.
+[ 2012-04-11T05:12:29+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:12:29+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:12:30+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.001460s ]
+[ 2012-04-11T05:12:30+08:00 ] SQL: INSERT INTO `articlepic` (`articleid`,`pictitle`,`picurl`) VALUES (4,'','http://img.local-dev.cn/2012/04/11/4f84a23df415b.jpg') [ RunTime:0.036596s ]
+[ 2012-04-11T05:12:30+08:00 ] NOTIC: [8] Undefined variable: count e3b9c41e8ad440e32283017304ebdb7b.php 第 22 行.
+[ 2012-04-11T05:12:31+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:12:31+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:12:31+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.002266s ]
+[ 2012-04-11T05:12:31+08:00 ] SQL: SHOW COLUMNS FROM `articlepic` [ RunTime:0.002582s ]
+[ 2012-04-11T05:12:31+08:00 ] SQL: SELECT * FROM `article` WHERE ( `id` = 4 ) LIMIT 1  [ RunTime:0.000884s ]
+[ 2012-04-11T05:12:31+08:00 ] SQL: SELECT * FROM `articlepic` WHERE articleid=4 [ RunTime:0.000346s ]
+[ 2012-04-11T05:12:38+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:12:38+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:12:38+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001520s ]
+[ 2012-04-11T05:12:38+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001697s ]
+[ 2012-04-11T05:12:42+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:13:44+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:13:44+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:13:44+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001568s ]
+[ 2012-04-11T05:13:44+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000521s ]
+[ 2012-04-11T05:13:47+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:14:35+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:14:35+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:14:35+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001508s ]
+[ 2012-04-11T05:14:35+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001134s ]
+[ 2012-04-11T05:14:38+08:00 ] NOTIC: [8] Undefined variable: artList 18bf5189e5052e7b8f81d71054b764bd.php 第 9 行.
+[ 2012-04-11T05:16:10+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:16:10+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:16:10+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001520s ]
+[ 2012-04-11T05:16:10+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000880s ]
+[ 2012-04-11T05:16:13+08:00 ] ERR: (ThinkException) 模板不存在[D:\hm/Tpl/default/Category/artlist.html]
+[ 2012-04-11T05:16:36+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:16:36+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:16:36+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001762s ]
+[ 2012-04-11T05:16:36+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000560s ]
+[ 2012-04-11T05:16:45+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:16:45+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:16:45+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001441s ]
+[ 2012-04-11T05:16:45+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000459s ]
+[ 2012-04-11T05:16:48+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:16:48+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001665s ]
+[ 2012-04-11T05:16:48+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.001907s ]
+[ 2012-04-11T05:18:31+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:18:31+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:18:31+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001629s ]
+[ 2012-04-11T05:18:31+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000492s ]
+[ 2012-04-11T05:18:34+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:18:34+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001855s ]
+[ 2012-04-11T05:18:34+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000606s ]
+[ 2012-04-11T05:19:00+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:19:00+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:19:00+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001558s ]
+[ 2012-04-11T05:19:00+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001176s ]
+[ 2012-04-11T05:19:03+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:19:03+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001932s ]
+[ 2012-04-11T05:19:03+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.001194s ]
+[ 2012-04-11T05:19:11+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:19:11+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:19:11+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001467s ]
+[ 2012-04-11T05:19:11+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001481s ]
+[ 2012-04-11T05:19:14+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:19:14+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.002552s ]
+[ 2012-04-11T05:19:14+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000838s ]
+[ 2012-04-11T05:36:43+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:36:43+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:36:43+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001502s ]
+[ 2012-04-11T05:36:43+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000992s ]
+[ 2012-04-11T05:36:47+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:36:47+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001698s ]
+[ 2012-04-11T05:36:47+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000668s ]
+[ 2012-04-11T05:49:49+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:49:49+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:49:49+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001630s ]
+[ 2012-04-11T05:49:49+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000676s ]
+[ 2012-04-11T05:49:52+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:49:52+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001814s ]
+[ 2012-04-11T05:49:52+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000568s ]
+[ 2012-04-11T05:59:23+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T05:59:23+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:59:23+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001894s ]
+[ 2012-04-11T05:59:23+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000933s ]
+[ 2012-04-11T05:59:27+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T05:59:27+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001700s ]
+[ 2012-04-11T05:59:27+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000617s ]
+[ 2012-04-11T06:03:42+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:03:42+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:03:42+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001495s ]
+[ 2012-04-11T06:03:42+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001951s ]
+[ 2012-04-11T06:03:46+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:03:46+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001793s ]
+[ 2012-04-11T06:03:46+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.001514s ]
+[ 2012-04-11T06:04:29+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:04:29+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:04:29+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001500s ]
+[ 2012-04-11T06:04:29+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000770s ]
+[ 2012-04-11T06:04:30+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:04:30+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:04:30+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001803s ]
+[ 2012-04-11T06:04:30+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000509s ]
+[ 2012-04-11T06:04:33+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:04:33+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001581s ]
+[ 2012-04-11T06:04:33+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.001259s ]
+[ 2012-04-11T06:05:29+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:05:29+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:05:29+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001467s ]
+[ 2012-04-11T06:05:29+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001478s ]
+[ 2012-04-11T06:05:33+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:05:33+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001699s ]
+[ 2012-04-11T06:05:33+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000641s ]
+[ 2012-04-11T06:05:54+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:05:54+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:05:54+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.002555s ]
+[ 2012-04-11T06:05:54+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000519s ]
+[ 2012-04-11T06:05:56+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:05:56+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001752s ]
+[ 2012-04-11T06:05:56+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.001238s ]
+[ 2012-04-11T06:06:36+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:06:36+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:06:36+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001606s ]
+[ 2012-04-11T06:06:36+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000815s ]
+[ 2012-04-11T06:06:44+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:06:44+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:06:44+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001569s ]
+[ 2012-04-11T06:06:44+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001281s ]
+[ 2012-04-11T06:06:46+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:06:46+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001699s ]
+[ 2012-04-11T06:06:46+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000587s ]
+[ 2012-04-11T06:07:20+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:07:20+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:07:20+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001576s ]
+[ 2012-04-11T06:07:20+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000592s ]
+[ 2012-04-11T06:07:23+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:07:23+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001697s ]
+[ 2012-04-11T06:07:23+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.001542s ]
+[ 2012-04-11T06:07:51+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:07:51+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:07:51+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001863s ]
+[ 2012-04-11T06:07:51+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000909s ]
+[ 2012-04-11T06:07:53+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:07:53+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001679s ]
+[ 2012-04-11T06:07:53+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000944s ]
+[ 2012-04-11T06:09:22+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:09:22+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:09:22+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001559s ]
+[ 2012-04-11T06:09:22+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000488s ]
+[ 2012-04-11T06:09:26+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:09:26+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001728s ]
+[ 2012-04-11T06:09:26+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.001440s ]
+[ 2012-04-11T06:09:56+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:09:56+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:09:56+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.002880s ]
+[ 2012-04-11T06:09:56+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001842s ]
+[ 2012-04-11T06:10:00+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:10:00+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001717s ]
+[ 2012-04-11T06:10:00+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000898s ]
+[ 2012-04-11T06:12:21+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:12:21+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:12:22+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001493s ]
+[ 2012-04-11T06:12:22+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001472s ]
+[ 2012-04-11T06:12:24+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:12:24+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001642s ]
+[ 2012-04-11T06:12:24+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000901s ]
+[ 2012-04-11T06:12:27+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:12:27+08:00 ] NOTIC: [8] Undefined index: token weiboAction.class.php 第 28 行.
+[ 2012-04-11T06:13:29+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:13:29+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:13:29+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001574s ]
+[ 2012-04-11T06:13:29+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001774s ]
+[ 2012-04-11T06:13:31+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:13:31+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:13:31+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001568s ]
+[ 2012-04-11T06:13:31+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.002007s ]
+[ 2012-04-11T06:13:31+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:13:31+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:13:31+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001527s ]
+[ 2012-04-11T06:13:31+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000466s ]
+[ 2012-04-11T06:13:32+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:13:32+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:13:32+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001395s ]
+[ 2012-04-11T06:13:32+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000807s ]
+[ 2012-04-11T06:13:34+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:13:34+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001701s ]
+[ 2012-04-11T06:13:34+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.001130s ]
+[ 2012-04-11T06:13:36+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:13:36+08:00 ] NOTIC: [8] Undefined index: token weiboAction.class.php 第 28 行.
+[ 2012-04-11T06:19:24+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:19:24+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:19:24+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001775s ]
+[ 2012-04-11T06:19:24+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000658s ]
+[ 2012-04-11T06:19:25+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:19:25+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:19:25+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001455s ]
+[ 2012-04-11T06:19:25+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000509s ]
+[ 2012-04-11T06:19:26+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:19:26+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:19:26+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001529s ]
+[ 2012-04-11T06:19:26+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.000494s ]
+[ 2012-04-11T06:19:28+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:19:28+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001824s ]
+[ 2012-04-11T06:19:28+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000598s ]
+[ 2012-04-11T06:19:31+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:19:31+08:00 ] NOTIC: [8] Undefined index: token weiboAction.class.php 第 28 行.
+[ 2012-04-11T06:46:06+08:00 ] NOTIC: [2] strpos(): Empty delimiter Dispatcher.class.php 第 158 行.
+[ 2012-04-11T06:46:06+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:46:06+08:00 ] SQL: SHOW COLUMNS FROM `category` [ RunTime:0.001493s ]
+[ 2012-04-11T06:46:06+08:00 ] SQL: SELECT * FROM `category` [ RunTime:0.001901s ]
+[ 2012-04-11T06:46:09+08:00 ] NOTIC: [8] Use of undefined constant Db - assumed 'Db' Model.class.php 第 1060 行.
+[ 2012-04-11T06:46:09+08:00 ] SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001667s ]
+[ 2012-04-11T06:46:09+08:00 ] SQL: SELECT * FROM `article` WHERE categoryid=2 ORDER BY id desc [ RunTime:0.000611s ]
+[ 2012-04-11T06:46:10+08:00 ] NOTIC: [8] Undefined variable: category f8b71c92af805d0c9638cb4f59f748ed.php 第 27 行.

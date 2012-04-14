@@ -1,0 +1,19 @@
+<present name="cid">
+	<present name="aList">
+	<p><a id="art_show" href="{&WWW}/index.php?m=Article&a=art_list&cid={$cid}" target="_blank" style="dispaly:none;">前端显示</a></p>
+	<volist name="aList" id="art">
+	<div style="700px;border-bottom:1px dotted">
+	标题：{$art.title}
+	<br />
+	<br />
+	简介：{$art.summary}
+	<br />
+	<br />
+	</div>
+	</volist>
+	<else />
+	暂无文章列表
+	</present>
+<else />
+	栏目错误！
+</present>

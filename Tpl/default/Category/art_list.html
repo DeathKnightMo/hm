@@ -1,0 +1,47 @@
+<script type="text/javascript">
+function check_all(obj,cName)
+{
+    var checkboxs = document.getElementsByName(cName);
+    for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;}
+}
+</script>
+<p><input type="checkbox" name="all" onclick="check_all(this,'c')" />全选/全不选 <input type="button" value="增加" onclick="addatr()"></p>
+<span style="margin-right:200px;margin-left:30px">标题</span>
+<span>简介</span>
+<volist name="artList" id="art">
+<div><input type="checkbox" name="c" value="{$art.id}" />
+<span style="margin-right:200px">{$art.title}</span>
+<span>{$art.summary}</span>
+</div>
+</volist>
+<input type="button" value="转发" onclick="sendtowb()">
+<script type="text/javascript">
+function addatr(){
+	 window.location.href="{&WWW}/index.php?m=Article&a=article&category=3";
+}
+function sendtowb(){
+	var selectedItems = new Array();
+	var j=0;
+	var v = document.getElementsByName("c"); 
+ 	for (i = 0; i < v.length; i++) { 
+ 		if (v[i].checked) { 
+ 		selectedItems[j]=v[i].value; 
+ 		j++;
+ 		} 
+ 	}
+ 	if (selectedItems.length==0) {
+ 		alert("请先选择要转发的资讯");
+ 	} else{
+
+ 		$.post("{&WWW}/index.php?m=weibo&a=sendmessage",{"articlelist":selectedItems},function(data){
+    		if(data.status==0)
+    		{
+    			alert(data.info);
+    		}else{
+    			window.location.href=data.info;
+    		}
+    	},"json");
+ 	};
+    
+}
+</script>

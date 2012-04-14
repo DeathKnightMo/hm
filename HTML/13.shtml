@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>4445</title>
+<script type="text/javascript">
+window.onload= function(){
+    var $ = function(id){return document.getElementById(id)};
+    $('menu').onclick = function(){
+        Scroll('test',300,1.2);
+    }
+    $('test').onclick = function(){
+        Scroll('test',300,1.2);
+    }
+}
+function Scroll(obj, h, s){
+    var h = h || 200;
+    var s = s || 1.2;
+    var obj = typeof(obj)=="string"?document.getElementById(obj):obj;
+    if(obj == undefined){return false;}
+    var status = obj.getAttribute("status")==null;
+    var oh = parseInt(obj.offsetHeight);
+    obj.style.height = oh;
+    obj.style.display = "block";
+    obj.style.overflow = "hidden";
+    if(obj.getAttribute("oldHeight") == null){
+        obj.setAttribute("oldHeight", oh);
+    }else{
+        var oldH = Math.ceil(obj.getAttribute("oldHeight"));
+    }
+    var reSet = function(){
+        if(status){
+            if(oh < h){
+                oh = Math.ceil(h-(h-oh)/s);
+                obj.style.height = oh+"px";
+            }else{
+                obj.setAttribute("status",false);
+                window.clearInterval(IntervalId);
+                document.getElementById("wbScId").className = "wbScY";
+                document.getElementById("showBtn").className = "wbList_max";
+            }
+        }else{
+            obj.style.height = oldH+"px";
+            obj.removeAttribute("status");
+            window.clearInterval(IntervalId);
+            document.getElementById("wbScId").className = "wbSc";
+            document.getElementById("showBtn").className = "wbList_min";
+        }
+    }
+    var IntervalId = window.setInterval(reSet,10);
+    return status;
+}
+</script>
+</head>
+
+<body>
+<div class="global_header" style="z-index: 1023; position: fixed;-position: absolute;">
+    <div id="nav_holder_top" class="topNav">
+        <h2><a href="index.html"><img alt="Jutech" src="img/logo.png"></a></h2>
+        <div class="JuteNav">
+            <ul>
+                <li><a href="index.html">摩&nbsp;维</a></li>
+                <li><a href="">自&nbsp;然</a></li>
+                <li><a href="">科&nbsp;技</a></li>
+                <li><a href="">成&nbsp;果</a></li>
+                <li><a href="">未&nbsp;来</a></li>
+                <li><a href="">关&nbsp;爱</a></li>
+                <li><a href="">伙&nbsp;伴</a></li>
+                <li><a href="">机&nbsp;遇</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav_holder_btm"></div>
+</div><!--  end top  -->
+<div class="bigShow">
+    <div class="detailsTit">
+        <h2><a href="about_news.html"><img alt="新闻资讯" src="img/about_zx.gif" /></a></h2>
+    </div>
+    <div class="CLR"></div>
+    <div class="detailsST">
+        <h2>444</h2>
+        <div class="detailsCT" style="margin-top:10px;">
+                <div class="inImg">
+                <div class="inImg_top"></div>
+                <div class="inImg_body"><a href="http://img.local-dev.cn/2012/04/11/51gamezp.jpg" target="_blank" class="MagicThumb"><img src="http://img.local-dev.cn/2012/04/11/51gamezp.jpg" /></a></div>
+                <div class="inImg_btm"></div>
+                </div>
+                <p class="P_con p_date"></p><div class="inImg">
+                <div class="inImg_top"></div>
+                <div class="inImg_body"><a href="http://img.local-dev.cn/2012/04/11/51gamezp.jpg" target="_blank" class="MagicThumb"><img src="http://img.local-dev.cn/2012/04/11/51gamezp.jpg" /></a></div>
+                <div class="inImg_btm"></div>
+                </div>
+                <p class="P_con p_date"></p><div class="inImg">
+                <div class="inImg_top"></div>
+                <div class="inImg_body"><a href="http://img.local-dev.cn/2012/04/11/51gamezp.jpg" target="_blank" class="MagicThumb"><img src="http://img.local-dev.cn/2012/04/11/51gamezp.jpg" /></a></div>
+                <div class="inImg_btm"></div>
+                </div>
+                <p class="P_con p_date"></p>        </div>
+        <div class="detailsDT">
+            <div class="detailsDT_txt">
+                <p class="P_btm">2222222222<br />
+4图他v</p>
+            </div>
+        </div>
+    </div>
+</div><!--  end con  -->
+<div class="CLR"></div>
+<div class="juteFooter">
+    <div class="fadeBox" style="line-height:28px;">&nbsp;&copy; 2007-2012 Jutech-All right reserved.</div>
+    <div id="test" class="footerMH210">
+        <div style=" width:1000px;padding-bottom:10px;"></div>
+        <div class="footer248">
+            <dl>
+                <dt style="font-weight:bold; color:#2e3a25; text-align:center; height:28p; line-height:24px;">关注摩维的朋友们</dt>
+                <dd>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"><img src="img/1.jpg" title="" /></a></a>
+                            <a href="#" target="_blank" title="">阿信</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img src="img/2.jpg" title="" /></a></a>
+                            <a href="#" target="_blank" title="">一汽大众</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img src="img/3.jpg" title="" /></a></a>
+                            <a href="#" target="_blank" title="">公共事业部</a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="footer652">
+            <dl class="weibo_list">
+                <dt style="font-weight:bold; color:#2e3a25; text-align:center; height:28p; line-height:24px;">他们正在说</dt>
+                <dd>
+                    <div class="btmMask"></div>
+                    <div>
+                      <div id="wbScId" class="wbSc">
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="img/4.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="img/5.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="img/6.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="img/7.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="img/8.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                      </div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div id="menu" class="footer100">
+            <span id="showBtn" class="wbList_min" title="展开"></span>
+            <a href=""><img src="img/xlwb_Logo.png" /></a>
+        </div>
+    </div>
+</div><!--  end footer  -->
+</body>
+
+</html>

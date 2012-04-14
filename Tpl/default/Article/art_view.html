@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="{&STATIC}/css/juteFace.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="{&STATIC}/css/magicthumb.css" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="{&STATIC}/js/magicthumb-packed.js"></script>
+<script type="text/javascript">
+window.onload= function(){
+    var $ = function(id){return document.getElementById(id)};
+    $('menu').onclick = function(){
+        Scroll('test',300,1.2);
+    }
+    $('test').onclick = function(){
+        Scroll('test',300,1.2);
+    }
+}
+function Scroll(obj, h, s){
+    var h = h || 200;
+    var s = s || 1.2;
+    var obj = typeof(obj)=="string"?document.getElementById(obj):obj;
+    if(obj == undefined){return false;}
+    var status = obj.getAttribute("status")==null;
+    var oh = parseInt(obj.offsetHeight);
+    obj.style.height = oh;
+    obj.style.display = "block";
+	obj.style.overflow = "hidden";
+    if(obj.getAttribute("oldHeight") == null){
+        obj.setAttribute("oldHeight", oh);
+    }else{
+        var oldH = Math.ceil(obj.getAttribute("oldHeight"));
+    }
+    var reSet = function(){
+        if(status){
+            if(oh < h){
+                oh = Math.ceil(h-(h-oh)/s);
+                obj.style.height = oh+"px";
+            }else{
+                obj.setAttribute("status",false);
+                window.clearInterval(IntervalId);
+	            document.getElementById("wbScId").className = "wbScY";
+				document.getElementById("showBtn").className = "wbList_max";
+            }
+        }else{
+            obj.style.height = oldH+"px";
+            obj.removeAttribute("status");
+            window.clearInterval(IntervalId);
+			document.getElementById("wbScId").className = "wbSc";
+			document.getElementById("showBtn").className = "wbList_min";
+        }
+    }
+    var IntervalId = window.setInterval(reSet,10);
+	return status;
+}
+</script>
+</head>
+
+<body>
+<div class="global_header" style="z-index: 1023; position: fixed;-position: absolute;">
+    <div id="nav_holder_top" class="topNav">
+        <h2><a href="index.html"><img alt="Jutech" src="{&STATIC}/images/logo.png"></a></h2>
+	    <div class="JuteNav">
+	        <ul>
+	        	<li><a href="index.html">摩&nbsp;维</a></li>
+	        	<li><a href="">自&nbsp;然</a></li>
+	        	<li><a href="">科&nbsp;技</a></li>
+	        	<li><a href="">成&nbsp;果</a></li>
+	        	<li><a href="">未&nbsp;来</a></li>
+	        	<li><a href="">关&nbsp;爱</a></li>
+	        	<li><a href="">伙&nbsp;伴</a></li>
+	        	<li><a href="">机&nbsp;遇</a></li>
+	        </ul>
+	    </div>
+    </div>
+    <div id="nav_holder_btm"></div>
+</div><!--  end top  -->
+<div class="bigShow">
+    <div class="detailsTit">
+        <h2><a href="about_news.html"><img alt="新闻资讯" src="{&STATIC}/images/about_zx.gif" /></a></h2>
+    </div>
+    <div class="CLR"></div>
+    <div class="detailsST">
+       <present name="art">
+        <h2>{$art.title}</h2>
+	    <div class="detailsCT" style="margin-top:10px;">
+	        <present name="artPicList">
+	        <volist name="artPicList" id="artPic">
+	        <div class="inImg">
+                <div class="inImg_top"></div>
+                <div class="inImg_body"><a href="{$artPic.picurl}" target="_blank" class="MagicThumb"><img src="{$artPic.picurl}" /></a></div>
+                <div class="inImg_btm"></div>
+            </div>
+            </volist>
+            </present>
+         
+        </div>
+	    <div class="detailsDT">
+	        <div class="detailsDT_txt">
+	            <p class="P_con">{$art.content}</p>
+	            <!--  
+	            <p class="P_con">本次高峰论坛由江苏省工商业联合会、对外贸易大学全球企业可持续创新研究中心、江苏省商务厅江苏省国际投资贸易促进中心、联合国开发计划署南南全球技术产权交易所、江苏教育电视台《苏商》栏目联合主办。中国国际经济交流中心秘书长、商务部原副部长魏建国、科特迪瓦驻华大使、加纳驻华大使及赞比亚驻华大使出席本次论坛并发表讲话。论坛还邀请了百余位活跃在当今江苏经济界并在业界有重要影响力的优秀苏商参会，就当前非洲投资所面临的各方面的问题进行了深入的探讨。</p>
+	            <p class="P_con"> 此次论坛上，紫荆花董事张光齐先生向来自各界的嘉宾详细介绍了紫荆花黄麻绿色产业在非洲的发展之路。将紫荆花的绿色普惠黄麻产业带向非洲，为非洲人民提供体面的有尊严的生活机会，一直是紫荆花的一个梦想。2009年，在全球企业可持续创新研究中心的帮助下，紫荆花分别与非洲宋海组织、联合国南南组织建立了合作关系，从而迈出了走向非洲的第一步。同年11月，非洲Songhai组织创始人、主任father Godfrey一行亲自到紫荆花参观并进行了深入的洽谈。鉴于黄麻可以利用荒弃的土地种植，不与棉花、粮食争良田，而且种植过程中只需阳光和雨水，无任何污染，非常符合非洲的自然条件和人力条件，当时他们就带了一部分种子回非洲试种。目前黄麻在非洲已经试种成功，紫荆花已经和非洲Songhai组织签订了相关协议，并已经开始着手在贝宁共和国建立黄麻绿色产业园区。</p>
+	            <p class="P_btm"> 在未来的日子里，紫荆花希望在更广阔的领域、更深入的层次与更多志同道合的组织和个人开展合作，共同把绿色黄麻种到更多的非洲土地上，为更多的非洲国家和人民创造切实的收益。</p>
+	        	-->
+	        </div>
+	    </div>
+	    </present>
+    </div>
+</div><!--  end con  -->
+<div class="CLR"></div>
+<div class="juteFooter">
+    <div class="fadeBox" style="line-height:28px;">&nbsp;&copy; 2007-2012 Jutech-All right reserved.</div>
+    <div id="test" class="footerMH210">
+        <div style=" width:1000px;padding-bottom:10px;"></div>
+        <div class="footer248">
+            <dl>
+                <dt style="font-weight:bold; color:#2e3a25; text-align:center; height:28p; line-height:24px;">关注摩维的朋友们</dt>
+                <dd>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"><img src="{&STATIC}/images/1.jpg" title="" /></a></a>
+                            <a href="#" target="_blank" title="">阿信</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img src="{&STATIC}/images/2.jpg" title="" /></a></a>
+                            <a href="#" target="_blank" title="">一汽大众</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><img src="{&STATIC}/images/3.jpg" title="" /></a></a>
+                            <a href="#" target="_blank" title="">公共事业部</a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="footer652">
+            <dl class="weibo_list">
+                <dt style="font-weight:bold; color:#2e3a25; text-align:center; height:28p; line-height:24px;">他们正在说</dt>
+                <dd>
+                    <div class="btmMask"></div>
+                    <div>
+                      <div id="wbScId" class="wbSc">
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="{&STATIC}/images/4.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="{&STATIC}/images/5.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="{&STATIC}/images/6.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="{&STATIC}/images/7.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                        <div class="wbNr0">
+                          <div class="wbTx"><a href=""><img src="{&STATIC}/images/8.jpg" title="" /></a></div>
+                          <div class="wbNr"> <a href=""></a>
+                            <div class="wbNrA"> <a href="" title="" target="_blank">亨神</a>：在第八届中国江苏国际服装博览会开幕前夕，记者就江苏紫荆花纺织科技股份有限公司首创的“摩维”系列产品的研究和发展状况，采访了公司董事长刘国忠。在去年第七届中国江苏国际服装博览会上，紫荆花公司推出了以天然黄麻纤维为原料，拥有国内专利加工技术精织而成的“摩维”面料。摩维的面世填...
+                              <div class="wbNrB">2分钟前</div>
+                            </div>
+                          </div>
+                        </div><!--  end for wbNr0 repeat  -->
+                      </div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div id="menu" class="footer100">
+            <span id="showBtn" class="wbList_min" title="展开"></span>
+            <a href=""><img src="{&STATIC}/images/xlwb_Logo.png" /></a>
+        </div>
+    </div>
+</div><!--  end footer  -->
+</body>
+
+</html>

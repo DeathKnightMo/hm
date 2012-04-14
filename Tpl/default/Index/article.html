@@ -1,0 +1,20 @@
+<html>
+<script src="{&STATIC}/js/jquery-1.6.4.min.js"></script>
+<body>
+	<div>
+	<form>
+		标签：<input type="text" name="title" />
+		简介：<input type="text" name="summary" />
+		内容：<textarea name="content" cols="4" ></textarea>
+		<input type="button" value="上传图片">
+	</form>
+	</div>
+	<div style="display:none;">
+		<form method="post" action="{&WWW}/User/portrait" enctype="multipart/form-data">
+			<input type="file" name="portrait"/>
+			<br/><br/>
+			<input type="submit" value="确认"/>
+		</form>
+	</div>
+</body>
+</html>

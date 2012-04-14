@@ -1,0 +1,61 @@
+<html>
+<script src="{&STATIC}/js/jquery-1.6.4.min.js"></script>
+<body>
+<eq name="successpic" value="">
+<div id="uploadshow">
+		<form method="post" action="{&WWW}/index.php?m=Article&a=addpic" enctype="multipart/form-data">
+			<input type="hidden" value="{$articleid}" name="articleid">
+			<input type="hidden" value="0" id="picnum" name="picnum">
+			<input type="button" value="增加图片" onclick="addpic()"><br/>
+			标题：<input type="text" name="pictitle0">
+			图片：<input type="file" name="image[]" id="pic0"/>
+			<br/>
+			<input type="submit" value="确认"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" value="无图片" onclick="nopic()"/>
+			<div style="display:none" id="nopic">
+				<input type="button" value="预览" onclick="window.open ('{&WWW}/index.php?m=Article&a=preview&articleid={$articleid}')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" value="发布页面" onclick="buildhtml({$articleid})">
+			</div>
+		</form>
+</div>
+<else />
+{$count}<br>
+<volist name="successpic" id="successpic">
+	{$successpic}成功保存<br />
+</volist>
+<volist name="faildpic" id="faildpic">
+	<input type="hidden" value="faildpic">
+	{$faildpic}保存失败！
+</volist>
+<input type="button" value="预览" onclick="window.open ('{&WWW}/index.php?m=Article&a=preview&articleid={$articleid}')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="发布页面" onclick="buildhtml({$articleid})">
+</eq>
+<script>
+function nopic(){
+	 if($("#nopic").is(":hidden")) {
+	 	$("#nopic").show();
+	 }else{
+	 	$("#nopic").hidden();
+	 }
+}
+function addpic(){
+	var picnum=Number($("#picnum").val());
+	var nextnum=picnum+1;
+	var addcontent="标题：<input type='text' name='pictitle"+nextnum+"'>图片：<input type='file' name='image[]' id='pic"+nextnum+"'/><br/>";
+	$("#pic"+picnum).next().after(addcontent);
+	$("#picnum").val(nextnum);
+}
+function buildhtml(id){
+	$.get("{&WWW}/index.php?m=Article&a=publish",{"articleid":id},function(data){
+		if(data.status==0){
+			alert("发布成功！");
+			window.location.href=data.info;
+		}else{
+			alert("发布失败，请重试！");
+		}
+	},"json");
+}
+</script>
+</body>
+</html>

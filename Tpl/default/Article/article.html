@@ -1,0 +1,32 @@
+<html>
+<script src="{&STATIC}/js/jquery-1.6.4.min.js"></script>
+<script charset="utf-8" src="{&STATIC}/kindeditor/kindeditor-min.js"></script>
+	<script charset="utf-8" src="{&STATIC}/kindeditor/lang/zh_CN.js"></script>
+		<script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					resizeType : 2,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					newlineTag : 'br',
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'link']
+				});
+			});
+		</script>
+<body>
+	<p>请填写新闻相关内容</p>
+	<div>
+	<form action="{&WWW}/index.php?m=Article&a=addarticle" method="post">
+		标签：<input type="text" name="title" /><br/>
+		简介：<input type="text" name="summary" /><br/>
+		内容：<textarea name="content" style="width:700px;height:200px;visibility:hidden;"></textarea><br/>
+		<input type="hidden" name="category" value="{$category}" />
+		<input type="submit" value="保存">
+	</form>
+	</div>
+</body>
+</html>
