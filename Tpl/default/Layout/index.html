@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript">
+var plstart = new Date();
+</script> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<present name="keywords">
+<meta name="keywords" content="{$keywords},hm">
+<else />
+<meta name="keywords" content="hm">
+</present>
+<present name="index">
+<meta name="description" content="hm">
+</present>
+<script  language ="javascript"  src ="{&STATIC}/js/jquery-1.4.2.min.js" ></script > 
+<script  language ="javascript"  src ="{&STATIC}/js/hm.js" ></script >
+<link href="{&STATIC}/css/core.css"  rel="stylesheet" type="text/css" />
+<link href="{&STATIC}/css/hm.css"  rel="stylesheet" type="text/css" />
+<link href="{&STATIC}/css/page.css"  rel="stylesheet" type="text/css" />
+<title>HM<present name="title">&nbsp;-&nbsp;{$title}</present></title>
+<style type="text/css">
+	.mypng {
+			azimuth: expression(
+			this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+			this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+			this.src = "{&STATIC}/images/transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+			this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+			this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);
+	}
+</style>
+</head>
+<body class="body_id">
+<div class="bg">
+	<layout name="Layout:header" cache="0" />
+	<div class="content">
+		<layout name="$content" cache="0" />
+	</div>
+	<img src="{&STATIC}/images/front_homeDrup.png" class="img1 mypng" />
+	<ul class="ul1">
+		<li class="ul1_li1"><a href="{&WWW}/Index/front"></a></li>
+		<li class="ul1_li2"><a href="{&WWW}/ModelRoom/solution/category/1"></a></li>
+		<if condition="$_SESSION['UID'] eq null">
+		<li class="ul1_li3"><a href="#"></a></li>
+		<else/>
+		<li class="ul1_li5"><a href="{&WWW}/User/show"></a></li>
+		</if>
+		<li class="ul1_li4"><a href="{&WWW}/Index/front_contact"></a></li>
+	</ul>
+	<img src="{&STATIC}/images/front_homeLine.jpg" class="img2" />
+	<layout name="Layout:footer" cache="0" />
+	<div class="box_login">
+		<div class="box_login1">
+			<div class="login_header">
+				<a class="login_header_a"></a>
+			</div>
+			<form class="box_login_form" >
+			<br />
+			<label>用户名：</label><input name="email" value=""  type="text" class="box_login_input1"/><br /><br />
+			<label>密&nbsp;&nbsp;码：</label><input name="password" value="" type="password" class="box_login_input2"/><br />
+			<input type="button" name="" value="" class="box_login_btn1" />
+			<!-- 
+			<input type="button" name=""  value="" id="box_login_btn2" class="box_register_btn" />
+			-->
+			</form>
+		</div>
+	</div>	
+</div>
+<script>
+
+function checkemail(){
+	var email=$("#email").val();
+	if(email==""){
+		$("#msg1").html("<font color=red>邮箱不能为空！</font>");
+	}else{
+			if(!/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(email)){
+			$("#msg1").html("<font color=red>邮箱格式不正确！</font>");
+				}else{
+				jQuery.post("{&WWW}/User/check",{"email":email},function (data){
+				if(data.status==0){
+					$("#msg1").html("<font color='red'>此邮箱已存在！</font>");
+					}else{
+						$("#msg1").html("");
+						}
+				
+				},"json");
+					}
+					}
+			}
+
+function checknick(){
+	var nick=$("#nick").val();
+	if(nick==""){
+		$("#msg2").html("<font color='red'>昵称不能为空！</font>");
+	}else{
+			jQuery.post("{&WWW}/User/check",{"nick":nick},function (data){
+				if(data.status==0){
+					$("#msg2").html("<font color='red'>"+data.info+"</font>");
+				}else{
+					$("#msg2").html("");
+				}
+		},"json");
+	}
+}
+function checkpwd(){
+	var pwd=$("#password").val();
+	if(pwd==""){
+		$("#msg3").html("<font color='red'>密码不能为空！</font>");
+	}else{
+		$("#msg3").html("");
+		}
+}
+function checkrepwd(){
+	var pwd=$("#password").val();
+	var repwd=$("#repassword").val();
+	if(repwd==""){
+		$("#msg4").html("<font color='red'>请再输入一次密码！</font>");
+	}else if(repwd!=pwd){
+		$("#msg4").html("<font color='red'>两次输入的密码不一致！</font>");
+	}else{
+		$("#msg4").html("<font color='red'>密码输入正确</font>");
+		}
+}
+function checkall(){
+	var email=$("#email").val();
+	var nick=$("#nick").val();
+	var pwd=$("#password").val();
+	var repwd=$("#repassword").val();
+	if(email!=""&&nick!=""&&pwd!=""&&repwd!=""&&pwd==repwd){
+		return true;
+	}else{
+		return false;
+	}
+}
+</script>	
+<script type="text/javascript">
+	$(function(){
+						
+		$(".box_login").hide();
+		$(".box_register").hide();
+		<present name="toLogin">
+		<eq name="toLogin" value="1">
+		$(".box_login").fadeIn("fast");
+		$("body").append("<div id='greybackground'></div>");
+		var documentheight = $(document).height();
+		$("#greybackground").css({"opacity":"0.5","height":documentheight});
+		</eq>
+		</present>
+		var screenwidth,screenheight,mytop,getPosLeft,getPosTop;
+		screenwidth = $(window).width();				
+		screenheight = $(window).height();				
+		mytop = $(document).scrollTop();
+		getPosLeft = screenwidth/2-260;
+		getPosTop = screenheight/2-180;
+		$(".box_login").css({"left":getPosLeft,"top":getPosTop});
+		$(window).resize(function(){
+			screenwidth = $(window).width();
+			screenheight = $(window).height();
+			mytop = $(document).scrollTop();
+			getPosLeft = screenwidth/2-260;
+			getPosTop = screenheight/2-180;
+			$(".box_login").css({"left":getPosLeft,"top":getPosTop+mytop});
+		});
+		$(window).scroll(function(){
+			screenwidth = $(window).width();
+			screenheight = $(window).height();
+			mytop = $(document).scrollTop();
+			getPosLeft = screenwidth/2-260;
+			getPosTop = screenheight/2-180;
+			$(".box_login").css({"left":getPosLeft,"top":getPosTop+mytop});
+		});
+		$(".ul1_li3").click(function(){
+		 <if condition="$_SESSION['UID'] eq null">
+			$(".box_login").fadeIn("fast");
+			$("body").append("<div id='greybackground'></div>");
+			var documentheight = $(document).height();
+			$("#greybackground").css({"opacity":"0.5","height":documentheight});
+			return false;
+		 </if>
+		});
+		$(".login_header_a").click(function(){
+			$(".box_login").hide();
+			$("#greybackground").remove();
+			return false;
+		});
+	});
+	$(".box_login_btn1").click(function(){
+		var email=$(".box_login_input1").val();
+		var password = $(".box_login_input2").val();
+		jQuery.post("{&WWW}/User/login",{"email":email,"password":password},function (data){
+			if(data.status==0){
+				$("#login_msg1").html("<font color=red>账号或密码输入错误！</font>");
+			}else{
+				$(".box_login").hide();
+				$("#greybackground").remove();
+				window.location.replace("{&WWW}/User/show");
+				}
+			},"json");
+	});
+</script>
+</body>
+</html>

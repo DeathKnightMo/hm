@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript">
+var plstart = new Date();
+</script> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<present name="keywords">
+<meta name="keywords" content="{$keywords},hm">
+<else />
+<meta name="keywords" content="hm">
+</present>
+<present name="index">
+<meta name="description" content="hm">
+</present>
+<script  language ="javascript"  src ="{&STATIC}/js/jquery-1.4.2.min.js" ></script > 
+<script  language ="javascript"  src ="{&STATIC}/js/hm.js" ></script >
+<link href="{&STATIC}/css/core.css"  rel="stylesheet" type="text/css" />
+<link href="{&STATIC}/css/hm.css"  rel="stylesheet" type="text/css" />
+<link href="{&STATIC}/css/page.css"  rel="stylesheet" type="text/css" />
+<title>HM<present name="title">&nbsp;-&nbsp;{$title}</present></title>
+<style type="text/css">
+	.mypng {
+			azimuth: expression(
+			this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+			this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+			this.src = "{&STATIC}/images/transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+			this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+			this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);
+	}
+</style>
+</head>
+<body class="body_id">
+<div class="bg">
+<layout name="Layout:header" cache="0" />
+	<div class="content">
+	<div class="self_back">
+		<span class="self_backs1" id="default_href">&nbsp;&nbsp;</span>
+		<layout name="Layout:left" cache="0" />
+		<div class="self_backright">
+		<layout name="$content" cache="0" />
+		</div>
+		<div class="self_backclear"></div>
+	</div>
+	</div>
+	<img src="{&STATIC}/images/front_homeDrup.png" class="img1 mypng" />
+	<ul class="ul1">
+		<li class="ul1_li1"><a href="{&WWW}/Index/front"></a></li>
+		<li class="ul1_li2"><a href="{&WWW}/ModelRoom/solution/category/1"></a></li>
+		<if condition="$_SESSION['UID'] eq null">
+		<li class="ul1_li3"><a href="#"></a></li>
+		<else/>
+		<li class="ul1_li5"><a href="{&WWW}/User/show"></a></li>
+		</if>
+		<li class="ul1_li4"><a href="{&WWW}/Index/front_contact"></a></li>
+	</ul>
+	<img src="{&STATIC}/images/front_homeLine.jpg" class="img2" />
+<layout name="Layout:footer" cache="0" />	
+</div>
+</body>
+</html>

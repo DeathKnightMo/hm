@@ -1,0 +1,19 @@
+<div class="role">
+<p>&gt;&gt;<a href="{&WWW}/Role/create">创建角色</a></p>
+<table border="1" class="center">
+	<tr>
+		<th>ID</th>
+		<th>角色名</th>
+		<th>角色说明</th>
+		<th>&nbsp;</th>
+	</tr>
+	<volist name="list" id="role">
+	<tr>
+		<td>{$role.id}</td>
+		<td>{$role.role_name}</td>
+		<td>{$role.description}</td>
+		<td><a href="{&WWW}/Role/edit/id/{$role.id}">编辑</a></td>
+	</tr>
+	</volist>
+</table>
+</div>

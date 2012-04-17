@@ -1,6 +1,10 @@
 <script language="javascript" src="{&STATIC}/js/hm_tree.js"></script>
-<script language="javascript" src="{&STATIC}/js/jquery-1.4.2.min.js"></script>
-<div style="width:1000px;margin:0 auto;">
+<div class="system_manageroom">			
+	<div class="system_list_space_div">	
+		<div class="system_list_space system_list_space1">
+			<span>&nbsp;&nbsp;创建栏目/文章</span>
+		</div>	
+<div class="system_list_new" style="width:1000px;">
 <div style="width:280px;float:left;">
  <p>栏目分类</p>
  <div id=tree></div>
@@ -37,15 +41,45 @@
 </p>
 </div>
 <div style="width:710px;float:left;border: 1px solid;">
+<div id="art_form" style="display:none;">
+<script charset="utf-8" src="{&STATIC}/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="{&STATIC}/kindeditor/lang/zh_CN.js"></script>
+<script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					resizeType : 2,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					newlineTag : 'br',
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'link']
+				});});
+</script>
+	<p>请填写新闻相关内容</p>
+	<div>
+	<form action="{&WWW}/index.php?m=Article&a=addarticle" method="post">
+		标签：<input type="text" name="title" /><br/>
+		简介：<input type="text" name="summary" /><br/>
+		内容：<textarea name="content" style="width:700px;height:200px;visibility:hidden;"></textarea><br/>
+		<input id="art_cid" type="hidden" name="category" value="" />
+		<input type="submit" value="保存">
+	</form>
+	</div>
+</div>
+<p>文章列表&nbsp;&nbsp;</p>
 <div id="art_list"　style="width:700px;">
 </div>
-<p>
-<a id="art_show" href="http://redbud12.shp02.host.35.com/hm/index.php?m=Article&a=art_list&cid=3" target="_blank">前端显示</a>
-</p>
 </div>
 <div style="clear:both;"></div>
 </div>
+
+
 </div>
+</div>
+<div class="self_backclear"></div>
 <script>
 var tv = new treeview("treeview","tree",true,true);
 var id_0 = new node("栏目分类","id_0","","");
@@ -61,8 +95,11 @@ var nResult=0;
 		if(sender.level==2){
 			//alert(sender.pid);
 			var cid=sender.pid.split("_")[1];
-			$("#art_list").load("{&WWW}/index.php?m=Category&a=art_list",{"category":cid});
-			
+			$("#art_cid").val(cid);
+			$("#art_form").show();
+			$("#art_list").load("{&WWW}/index.php?m=Category&a=article",{"category":cid});
+		}else{
+			$("#art_form").hide();
 		}
 		return false;
 	}

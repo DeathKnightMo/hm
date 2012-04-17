@@ -7,10 +7,8 @@ define ( 'SESSION_UPDATE', 2 );
 define ( 'DEFAULT_DISPLAY', "Layout:default" );//登陆后有列表
 define	('DEFAULT_NO_LEFT', "Layout:index");//登陆后无左侧列表
 define ( 'DEFAULT_ERROR', "Public:error" );
-//默认输出品牌馆模板定义
-define ( 'DEFAULT_BRAND_DISPLAY', "Layout:brand_default" );//品牌馆有左侧栏
-define	('DEFAULT_BRAND_NO_LEFT', "Layout:brand_index");//品牌馆无左侧列表
 
+define("ROLE_ROOT", 1);
 //默认分页显示每页的记录数
 define ( 'PAGE_NUM_DEFAULT', 24 );
 
@@ -40,20 +38,10 @@ function getLoginUser() {
  */
 function setSession($user) {
 	//用户登录
-
-		Session::set ( "nick", $user ['nick_name'] );
+		Session::set ( "nick", $user ['nickname'] );
 		Session::set ( "UID", $user ['id'] );
-		Session::set ("cssId", $user ['cssfile_id']);
-		Session::set ("portrait", $user ['portrait']);
-		$UserRole = M ( "UserRole" );
-		$map ['user_id'] = $user ['id'];
-		$userRole = $UserRole->where ( $map )
-			->find ();
-		//print '用户登录11111=='.$userRole['role_id'];
-		if ($userRole != null) {
-			//print '用户登录2222==';
-			Session::set ( "RID", $userRole ['role_id'] );
-		}
+		Session::set ( "RID", $user ['role'] );
+		
 
 }
 

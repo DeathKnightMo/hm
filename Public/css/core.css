@@ -1,0 +1,107 @@
+.bodyFrame {
+	PADDING-BOTTOM: 10px;
+	WIDTH: 950px;
+	text-align: center;
+	margin: 0px auto 0px auto;
+}
+/* clearing */
+	.stretch,
+	.clear {
+		clear:both;
+		height:1px;
+		margin:0;
+		padding:0;
+		font-size: 1px;
+		line-height: 1px;
+	}
+	.clearfix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	* html>body .clearfix {
+
+		width: 100%;
+	}
+
+	* html .clearfix {
+		/* Hides from IE-mac \*/
+		height: 1%;
+		/* End hide from IE-mac */
+	}
+/* end clearing */
+
+
+/* replace */
+	.replace {
+		display:block;
+
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-color:transparent;
+	}
+	/* tidy these up */
+	.replace * {
+		text-indent: -10000px;
+		display:block;
+
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-color:transparent;
+	}
+	.replace a {
+		text-indent:0;
+	}
+	.replace a span {
+		text-indent:-10000px;
+	}
+/* end replace */
+
+
+/* accessibility */
+     span.accesskey {
+     	text-decoration:none;
+     }
+     .accessibility {
+     	position: absolute;
+     	top: -999em;
+     	left: -999em;
+     }
+/* end accessibility */
+.bold{
+	font-weight:bold;
+}
+
+
+
+ul, li{margin:0px; padding:0px; list-style-type:none;}
+H1{FONT-SIZE: 16px; margin:0px; padding:0px;}
+H2,H3{FONT-SIZE: 14px;margin:0px; padding:0px;}
+H4,H5,H6{FONT-SIZE: 12px; margin:0px;padding:0px;}
+SMALL{FONT-SIZE: 11px}
+
+form{margin:0px;padding:0px;}
+
+a{color:blue;text-decoration:none;}
+a,a:link{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active{text-decoration:none;color:#d70204};
+dl{margin:0px;}
+.input-text {BORDER: #bdc7d8 1px solid;	PADDING: 3px;}
+
+.bold{font-weight:bold;}
+img{border:0 none;}
+a.bold, a.bold:visited, a.bold:hover, a.bold:link{font-weight:bold;}
+.wrap{ word-wrap:break-word;	word-break:break-all;}
+.nowrap{white-space:nowrap}
+
+.submitLine{margin-top:20px; text-align:center;}
+.center{text-align:center;}
+
+.pagination{margin-top:15px;}
+.pagination, .pagination a:link, .pagination a:visited, .pagination a:hover, .pagination span{font-size:11px; text-align:center;}
+.px20{width:20px;}
+
+.Wdate{cursor:pointer; width:130px;}

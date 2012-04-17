@@ -1,0 +1,27 @@
+<div class="role">
+<p>&gt;&gt;<a href="{&WWW}/Role/index">返回</a></p>
+<form action="{&WWW}/Role/update" method="post">
+	<table >
+	    <tr>
+	    <th colspan="2" align="center" >角色修改</th>
+	    </tr>
+		<tr>
+			<td width="40%" align="right">角色名：</td>
+			<td><input name="role_name" type="text" value="{$role.role_name}" /></td>
+		</tr>
+		<tr>
+		<td align="right">角色说明：</td>
+		<td>
+			<input name="description" type="text" value="{$role.description}">
+		</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<input name="id" type="hidden" value="{$role.id}" />
+				<input name="" type="submit" value="提交" class="button" />
+			</td>
+		</tr>
+	</table>
+</form>
+</div>

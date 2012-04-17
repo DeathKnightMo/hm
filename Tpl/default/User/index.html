@@ -1,0 +1,107 @@
+<div class="system_searchuser">
+<div class="lite_list_header"></div>
+<div class="lite_list_body">
+	<div class="searchuser_form">
+		<form action="{&WWW}/User/index" method="post">
+			<select name="search_key" class="searchuser_select">
+				<option value="0">&nbsp;请选择搜索条件</option>
+				<option value="1">用户ID</option>
+				<option value="2">用户昵称</option>
+			</select>
+			<present name="map.search_value">
+			<input type="text" class="searchuser_input" name="search_value" value="{$map.search_value}"/>
+			<else />
+			<input type="text" class="searchuser_input" name="search_value" value=""/>
+			</present>
+			<input type="submit" name="" value="" class="searchuser_button" />
+
+		</form>
+	</div>
+	<table class="searchuser_table" cellpadding="0px;" cellspacing="0px;">
+		<tr>
+			<th class="searchuser_th1">用户ID</th><th>用户名称</th><th>用户角色</th><th class="searchuser_th2">操作</th>
+		</tr>
+		<present name="ulist">
+			 <volist name="ulist" id="user">
+				<tr>
+					<td>{$user.id}</td>
+					<td>{$user.nickname}</td>
+					<assign name="roleId" value="$user.role" />
+					
+					<td>{$rList.$roleId}</td>
+					
+					<td id="user-{$user.id}">
+							<eq name="user.status" value="1">
+							<a href="javascript:void(0);" onclick="goDisable({$user.id},0);">封禁</a>
+							<else />
+							<eq name="user.status" value="0">
+							<a href="javascript:void(0);" onclick="goDisable({$user.id},1);">解禁</a>
+							<else />
+							未激活
+							</eq>
+							</eq>
+							<a href="{&WWW}/User/detail/uid/{$user.id}">查看</a>
+							<a href="{&WWW}/User/edit/uid/{$user.id}">编辑</a>
+							<a href="javascript:void(0);" onclick="resetPwd({$user.id});">重置密码</a>
+						</td>
+					</tr>
+				</volist>
+			</present>
+		</table>
+	</div>
+	<div class="clear"></div>
+	<div class="lite_list_footer"></div>	
+	<present name="page">
+  	<div class="page">
+  	{$page} 
+  			 <!--  
+  				<p class="page_redirect">跳转：<input type="text" class="lite_list_fenye_input1 lite_list_fenye_input1a" /> 页  <input type="button" value="" class="lite_list_fenye_btn1 lite_list_fenye_btn1a goTo"  /></p>
+  				-->
+  				
+  			</div>
+  	</present>
+</div>
+<script>
+	$(function(){
+		$("#current_path").html("&nbsp;&nbsp;个人中心&gt;用户管理&gt; 查找用户");
+		$("#user_manager").css("background","url('{&STATIC}/images/lite_left_open.gif') no-repeat scroll 10% 50%");
+		$("#user_manager").next(".lite_userleft_lib").show();
+		$(".search_user_left").addClass("lite_left_clicka");
+		
+		<present name="map.search_key">
+		$(".searchuser_select").val({$map.search_key});
+		</present>
+	});
+	function goDisable(uid,status){
+		if(null==uid){
+			alert("未指定用户！");
+			return;
+		}
+		jQuery.post("{&WWW}/User/update",{"uid":uid,"status":status},function(data){
+			if(data.status==1){
+				alert(data.info);
+				if(status==0){
+					$("#user-"+uid).html("<a href='javascript:void(0);' style='text-decoration:none' onclick='goDisable("+uid+",1)'"+">解禁</a>&nbsp;<a href='{&WWW}/User/detail/uid/"+uid+"'>查看</a>&nbsp;<a href='{&WWW}/User/edit/uid/"+uid+"'>编辑</a>&nbsp;<a href='javascript:void(0);' onclick='resetPwd("+uid+");'>重置密码</a>");
+				}else{
+					$("#user-"+uid).html("<a href='javascript:void(0);' style='text-decoration:none' onclick='goDisable("+uid+",0)'"+">封禁</a>&nbsp;<a href='{&WWW}/User/detail/uid/"+uid+"'>查看</a>&nbsp;<a href='{&WWW}/User/edit/uid/"+uid+"'>编辑</a>&nbsp;<a href='javascript:void(0);' onclick='resetPwd("+uid+");'>重置密码</a>");
+				}
+			}else{
+				alert(data.info);
+			}
+		},"json");
+	}
+	function resetPwd(uid){
+		if(null==uid){
+			alert("未指定用户！");
+			return;
+		}
+		jQuery.post("{&WWW}/User/resetPwd02",{"uid":uid},function(data){
+			if(data.status==1){
+				alert(data.info);
+			}else{
+				alert(data.info);
+			}
+		},"json");
+	}
+</script>
+
