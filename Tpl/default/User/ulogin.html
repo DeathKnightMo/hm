@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <script type="text/javascript">
@@ -34,28 +36,27 @@ var plstart = new Date();
 <div class="bg">
 <layout name="Layout:header" cache="0" />
 	<div class="content">
-	<div class="self_back">
-		<span class="self_backs1" id="default_href">&nbsp;&nbsp;</span>
-		<layout name="Layout:left" cache="0" />
-		<div class="self_backright">
-		<layout name="$content" cache="0" />
+
+		<div class="login_bk" style="height:300px;width:300px;margin:0 auto;">
+		<form action="{&WWW}/index.php?m=User&a=login" method="post">
+		<dl class="login" style="padding-top:100px;">
+			<dd>账&nbsp;&nbsp;号：<input name="account" value=""  type="text" class="input-len"/><br /><br /></dd>
+			
+			<dd>密&nbsp;&nbsp;码：<input name="password" value="" type="password" class="input-len"/><br /><br /></dd>
+			<present name="email">
+			<dt>用户名或密码错误！</dt>
+			</present>
+			<dd id="login" style="padding-left:65px;">
+				<input type="submit" name="" value="登  录" class="button" />&nbsp;
+			</dd>
+		</dl>
+		
+		</form>
 		</div>
-		<div class="self_backclear"></div>
-	</div>
+
 	</div>
 	<img src="{&STATIC}/images/front_homeDrup.png" class="img1 mypng" />
-	<!--  
-	<ul class="ul1">
-		<li class="ul1_li1"><a href="{&WWW}/Index/front"></a></li>
-		<li class="ul1_li2"><a href="{&WWW}/ModelRoom/solution/category/1"></a></li>
-		<if condition="$_SESSION['UID'] eq null">
-		<li class="ul1_li3"><a href="#"></a></li>
-		<else/>
-		<li class="ul1_li5"><a href="{&WWW}/User/show"></a></li>
-		</if>
-		<li class="ul1_li4"><a href="{&WWW}/Index/front_contact"></a></li>
-	</ul>
-	-->
+	
 	<img src="{&STATIC}/images/front_homeLine.jpg" class="img2" />
 <layout name="Layout:footer" cache="0" />	
 </div>

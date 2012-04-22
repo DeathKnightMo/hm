@@ -41,8 +41,6 @@ function setSession($user) {
 		Session::set ( "nick", $user ['nickname'] );
 		Session::set ( "UID", $user ['id'] );
 		Session::set ( "RID", $user ['role'] );
-		
-
 }
 
 /**

@@ -2,6 +2,7 @@
 class CategoryAction extends CommonAction{
 	
 	public function index(){
+		$this->has_right("Category","index");
 		$Category=M("Category");
 		$cList=$Category->select();
 		$this->assign("cList",$cList);

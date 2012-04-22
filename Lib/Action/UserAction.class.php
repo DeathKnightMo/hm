@@ -271,7 +271,7 @@ class UserAction extends CommonAction {
 	public function logout() {
 		if(isset($_SESSION['UID']))
 			Session::clear();
-		redirect(C("WWW")."/index.php?m=User&a=index");
+		redirect(C("WWW"));
 	}
 	
 	/**
@@ -347,19 +347,23 @@ class UserAction extends CommonAction {
 	public function update() {
 	
 		//管理员解除/封禁用户信息
-		if (isset ( $_POST ['uid'] ) && $_POST ['uid'] > 0) {
-			if (! isRoot () && ! isMarketer () ) {
+		if (isset ( $_POST ['uid'] ) && intval($_POST ['uid']) > 0&&isset($_POST['status'])) {
+			if (! isRoot ()  ) {
 				$this->ajaxReturn(0,"你没有权限！",0);
 			}
-			$UserRole = M ( "UserRole" );
-			$count = $UserRole->where ( "user_id=" . $_POST ['uid'] . " and role_id=" . ROLE_ROOT )
-				->count ();
-			if ($count > 0) {
+			$uid=intval($_POST['uid']);
+			if ($uid ==1) {
 				$this->ajaxReturn ( 0, "操作失败！管理员账号不允许封禁！", 0 );
 			}
-			$User = D ( "User" );
-			$data ['id'] = $_POST ['uid'];
-			$data ['status'] = $_POST ['status'];
+			$User = M ( "User" );
+			$data ['id'] = $uid;
+			$status=intval($_POST['status']);
+			if($status>=1){
+				$status=1;
+			}else{
+				$status=0;
+			}
+			$data ['usestate'] = $status;
 			$u_id = $User->save ( $data );
 			if ($u_id !== false) {
 				$this->ajaxReturn ( 1, "操作成功！", 1 );
@@ -466,20 +470,8 @@ class UserAction extends CommonAction {
 		}
 	}
 	
-	/**
-	 * 
-	 * 管理员首页
-	 *
-	 */
-	public function admin() {
-		if (! isLogin ()) {
-			redirect(C("WWW"));
-		}
-		if (! isRoot () && ! isMarketer() ) {
-			$this->no_right();
-		}
-		$this->get_user_cookie();
-		$this->display ( DEFAULT_DISPLAY );
+	public function ulogin(){
+		$this->display();
 	}
 
 	/**
@@ -488,61 +480,53 @@ class UserAction extends CommonAction {
 	 * 
 	 */
 	public function addMember(){
-		if(!isLogin()){
-			redirect(C('WWW'));
-		}
-		if (! isRoot () && ! isMarketer () ) {
+		if (! isRoot ()) {
 			$this->no_right();
 		}
-		$this->get_user_cookie();
+		$Role=M("Role");
+		$roleList=$Role->where("id>1")->select();
+		$this->assign("rList",$roleList);
 		$this->display ( DEFAULT_DISPLAY );
 	}
 	
 	public function saveMember() {
 		if(!isLogin()){
-			redirect(C('WWW'));
+			redirect(C('WWW')."/index.php?m=User&a=ulogin");
 		}
-		if (! isRoot () && ! isMarketer () ) {
+		if (! isRoot ()) {
 			$this->no_right();
 		}
-		if (isset ( $_POST ['email'] )&&isset($_POST['nick_name'])&&isset($_POST['role'])){
-			$User = D ( "User" );
-			if (! $User->create ()) {
-				// 如果创建失败 表示验证没有通过 输出错误提示信息
-			} else {
-				$nick = $User->nick_name;
-				if (preg_match ( "/偶家/", $nick )) {
-					$this->error_msg( '昵称包含非法字符！' );
-				}
-				if(check_email_format($nick)){
-					$this->error_msg("邮箱不能用做昵称！");
-				}
-				
-				// 验证通过 可以进行其他数据操作
-				$result = $User->add ();
-				if ($result !== false) {
-						$roleId=trim($_POST['role']);
-						if($roleId==2||$roleId==3||$roleId==4){
-							$UserRole = M ( "UserRole" );
-							$data ['role_id'] = $roleId;
-							$data ['user_id'] = $result;
-							$data ['create_time'] = get_date_time ();
-							$data ['update_time'] = get_date_time ();
-							$result2 = $UserRole->add ( $data );
-							if($result2!==false){
-								redirect ( C('WWW')."/User/index" );
-							}else{	
-								$User->where("id=".$result)->delete();
-								$this->error_msg("添加用户失败！");
-							}
-						}else{
-							$User->where("id=".$result)->delete();
-							$this->error_msg("选择的角色错误！");
-						}
-				} else {
-					$this->error_msg("添加用户失败！");
-				}
+		if (isset($_POST['nickname'])&&isset($_POST['role'])&&isset($_POST['password'])&&isset($_POST['repassword'])){
+			$User = M ( "User" );
+			$nick=trim($_POST['nickname']);
+			$pwd=trim($_POST['password']);
+			$repwd=trim($_POST['repassword']);
+			$role=intval($_POST['role']);
+			if($nick==""){
+				$this->error_msg("请填写账号！");
 			}
+			if($pwd==""|$repwd==""){
+				$this->error_msg("请填写密码！");
+			}
+			if($pwd!=$repwd){
+				$this->error_msg("二次密码不一致！");
+			}
+			if($role<=0){
+				$this->error_msg("请选择一个角色！");
+			}
+			$count=$User->where("nickname='".$nick."'")->count();
+			if($count>0)
+				$this->error_msg("此账号名已经存在！");
+			$data['nickname']=$nick;
+			$data['password']=md5($pwd);			$data['role']=$role;
+			$data['usestate']=1;//0表示封禁
+			$result=$User->add($data);
+			if($result!==false){
+				$this->success_msg("用户添加成功！", C("WWW")."/index.php?m=User&a=index");
+			}else{
+				$this->error_msg("添加用户失败！");
+			}
+			
 		}
 		$this->error_msg("缺少指定参数！");
 	}

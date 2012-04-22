@@ -1,0 +1,97 @@
+<div class="self_backright self_jiben">
+					<span class="system_adduser"></span>
+					<form class="adduser" action="{&WWW}/index.php?m=User&a=saveMember" method="post" onsubmit="return checkall();">
+					<label>账&nbsp;&nbsp;&nbsp;&nbsp;号:&nbsp; </label><input id="nick" name="nickname" type="text" onfocus="if(value==defaultValue)value=''" value="请输入账号" onblur="if(!value)value=defaultValue;checknick()" class="selfjiben_rightinput default_value" />&nbsp;*&nbsp;<span id="msg1"></span><br />
+					<label>密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp; </label><input id="password" name="password" type="password"  value="" onblur="checkpwd()" class="selfjiben_rightinput" />&nbsp;*&nbsp;<span id="msg2"></span><br />
+					<label>重复密码：</label><input id="repassword" name="repassword" type="password" value="" onblur="checkrepwd()" class="selfjiben_rightinput" />&nbsp;*&nbsp;<span id="msg3"></span><br />
+					<label>用户角色：</label>
+					<select id="role" name="role">
+						<option value="0">选择角色</option>
+						<volist name="rList" id="role">
+						<option value="{$role.id}">{$role.name}</option>
+						</volist>
+					</select>
+					
+					<br />
+					<input type="submit" name="button" value="" class="selfjiben_rightbtn2" />
+					</form>
+				</div>
+				<div class="self_backclear"></div>
+<script>
+$(function(){
+	$("#default_href").html("&nbsp;&nbsp;您所在的位置：个人后台&gt; 用户管理&gt; 添加用户<a href='{&WWW}/index.php?m=User&a=logout' class='system_out'>退出登录</a>");
+	$("#user_manager").next(".self_backselfli2").show();
+	$("#user_manager").find("a").css("background","url('{&STATIC}/images/selfback_link1.jpg') no-repeat 10% center");
+	$(".add_user_left").addClass("self_backselflia");
+	$(".default_value").css("color","#CCCCCC");
+	$(".default_value").focus(function(){
+		$(this).css("color","#474646");
+	});
+});
+function checkemail(){
+	var email=$("#email").val();
+	if(email==""||email=="请输入用户名"){
+		$("#email").css("color","#CCCCCC");
+		$("#msg4").html("<font color='red'>邮箱不能为空！</font>");
+	}else{
+		if(!/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(email)){
+			$("#msg4").html("<font color='red'>邮箱格式不正确！</font>");
+		}else{
+			jQuery.post("{&WWW}/User/check",{"email":email},function (data){
+				if(data.status==0){
+					$("#msg4").html("<font color='red'>此邮箱已存在！</font>");
+				}else{
+					$("#msg4").html("");
+				}
+				
+			},"json");
+			}
+		}
+	}
+
+function checknick(){
+	var nick=$("#nick").val();
+	if(nick==""||nick=="请输入昵称"){
+		$("#nick").css("color","#CCCCCC");
+		$("#msg1").html("<font color='red'>昵称不能为空！</font>");
+	}else{
+			jQuery.post("{&WWW}/User/check",{"nick":nick},function (data){
+				if(data.status==0){
+					$("#msg1").html("<font color='red'>"+data.info+"</font>");
+				}else{
+					$("#msg1").html("");
+				}
+		},"json");
+	}
+}
+function checkpwd(){
+	var pwd=$("#password").val();
+	if(pwd==""){
+		$("#msg2").html("<font color='red'>密码不能为空！</font>");
+	}else{
+		$("#msg2").html("");
+		}
+}
+function checkrepwd(){
+	var pwd=$("#password").val();
+	var repwd=$("#repassword").val();
+	if(repwd==""){
+		$("#msg3").html("<font color='red'>请再输入一次密码！</font>");
+	}else if(repwd!=pwd){
+		$("#msg3").html("<font color='red'>两次输入的密码不一致！</font>");
+	}else{
+		$("#msg3").html("<font color='green'>密码输入正确</font>");
+	}
+}
+function checkall(){
+	var email=$("#email").val();
+	var nick=$("#nick").val();
+	var pwd=$("#password").val();
+	var repwd=$("#repassword").val();
+	if(email!=""&&email!="请输入用户名"&&nick!=""&&nick!="请输入昵称"&&pwd!=""&&repwd!=""&&pwd==repwd){
+		return true;
+	}else{
+		return false;
+	}
+}
+</script>

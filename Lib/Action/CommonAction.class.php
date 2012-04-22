@@ -15,6 +15,37 @@ class CommonAction extends Action {
 	function no_right(){
 		$this->error_msg("很抱歉，您没有权限访问此页面！",0);
 	}
+	
+	/**
+	 * 
+	 * 用户是否有访问权限
+	 * @param $act action名
+	 * @param $fun function名
+	 */
+	
+	protected function has_right($act,$fun){
+		$roleId=get_user_role();
+		if($roleId===false){
+			$this->no_right();
+		}
+		if($act==""||$fun==""){
+			$this->no_right();
+		}
+		$Permissions=M("Permissions");
+		$Role=M("Role");
+		$role=$Role->find($roleId);
+		$per=$Permissions->where("action='".$act."' and fun='".$fun."'")->find();
+		if(isset($per['id'])&&$per['id']>0){
+			$rolePer="";
+			//角色权限
+			if(isset($role['permissions'])&&trim($role['permissions'])!="")
+				$rolePer=trim($role['permissions']);
+			$perId="/,".$per['id'].",/";
+			if(!preg_match($perId, ",".$rolePer.",")){
+				$this->no_right();
+			}
+		}
+	}
 	/**
 	 * 
 	 * 返回错误提示信息

@@ -31,14 +31,12 @@
 					<td>{$rList.$roleId}</td>
 					
 					<td id="user-{$user.id}">
-							<eq name="user.status" value="1">
+							<eq name="user.usestate" value="1">
 							<a href="javascript:void(0);" onclick="goDisable({$user.id},0);">封禁</a>
 							<else />
-							<eq name="user.status" value="0">
+							
 							<a href="javascript:void(0);" onclick="goDisable({$user.id},1);">解禁</a>
-							<else />
-							未激活
-							</eq>
+						
 							</eq>
 							<a href="{&WWW}/User/detail/uid/{$user.id}">查看</a>
 							<a href="{&WWW}/User/edit/uid/{$user.id}">编辑</a>
@@ -61,13 +59,14 @@
   			</div>
   	</present>
 </div>
+
+	
 <script>
 	$(function(){
-		$("#current_path").html("&nbsp;&nbsp;个人中心&gt;用户管理&gt; 查找用户");
-		$("#user_manager").css("background","url('{&STATIC}/images/lite_left_open.gif') no-repeat scroll 10% 50%");
-		$("#user_manager").next(".lite_userleft_lib").show();
-		$(".search_user_left").addClass("lite_left_clicka");
-		
+		$("#default_href").html("&nbsp;&nbsp;您所在的位置：个人后台&gt; 用户管理&gt; 查找用户<a href='{&WWW}/index.php?m=User&a=logout' class='system_out'>退出登录</a>");
+		$("#user_manager").next(".self_backselfli2").show();
+		$("#user_manager").find("a").css("background","url('{&STATIC}/images/selfback_link1.jpg') no-repeat 10% center");
+		$(".search_user_left").addClass("self_backselflia");
 		<present name="map.search_key">
 		$(".searchuser_select").val({$map.search_key});
 		</present>
@@ -77,7 +76,7 @@
 			alert("未指定用户！");
 			return;
 		}
-		jQuery.post("{&WWW}/User/update",{"uid":uid,"status":status},function(data){
+		jQuery.post("{&WWW}/index.php?m=User&a=update",{"uid":uid,"status":status},function(data){
 			if(data.status==1){
 				alert(data.info);
 				if(status==0){
@@ -95,7 +94,7 @@
 			alert("未指定用户！");
 			return;
 		}
-		jQuery.post("{&WWW}/User/resetPwd02",{"uid":uid},function(data){
+		jQuery.post("{&WWW}/User/resetPwd",{"uid":uid},function(data){
 			if(data.status==1){
 				alert(data.info);
 			}else{
@@ -104,4 +103,5 @@
 		},"json");
 	}
 </script>
+
 
